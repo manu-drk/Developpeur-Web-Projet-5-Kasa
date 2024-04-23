@@ -1,4 +1,8 @@
-import logo from './logo.svg';
+import React from "react";
+import { Routes, Route, Navigate, HashRouter } from "react-router-dom";
+import A-propos from "./pages/a-propos/A-propos";
+import Home from "./pages/home/Home";
+import Logements from "./pages/logements/Logements";
 import './App.css';
 
 function App() {
