@@ -1,9 +1,11 @@
 import React from "react";
 
-const Logments = () => {
-    return (
-      
-    );
+const Logements = () => {
+  return (
+    <div className="logements">
+  
+    </div>
+  );
   };
   
-  export default Logments;
+  export default Logements;

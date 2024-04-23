@@ -1,29 +1,26 @@
 import React from "react";
-import { Routes, Route, Navigate, HashRouter } from "react-router-dom";
-import A-propos from "./pages/a-propos/A-propos";
+import { Router, Routes, Route } from 'react-router-dom'
+import Apropos from "./pages/apropos/Apropos";
 import Home from "./pages/home/Home";
+import Error from "./pages/Error/Error";
 import Logements from "./pages/logements/Logements";
 import './App.css';
+import logo from './logo.svg'
 
 function App() {
-  return (
+	return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img scr={logo}/>
+    <Router>
+      <Routes>      
+        <Route path="/" element={<Home />} />
+        <Route path="/apropos" element={<Apropos />} />
+        <Route path="/logements/:id" element={<Logements />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </Router>
     </div>
   );
-}
+};
 
 export default App;
