@@ -10,7 +10,7 @@ import logo from './logo.svg'
 function App() {
 	return (
     <div className="App">
-      <img scr={logo}/>
+      <img scr={logo} alt='logo-react'/>
     <Router>
       <Routes>      
         <Route path="/" element={<Home />} />
