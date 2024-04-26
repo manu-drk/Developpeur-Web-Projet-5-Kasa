@@ -1,0 +1,7 @@
+.nav-header {
+    display: flex;
+    justify-content: flex-end;
+    text-transform: none;
+    margin-top: 30px;
+    margin: 20px;
+    }
