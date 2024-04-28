@@ -1,0 +1,32 @@
+.footer {
+    /* display: flex; */
+    /* flex-direction: column; */
+    background-color: black;
+    height: 209px;
+    width: 100%;
+    }
+
+.footer__fig {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: 0 auto;
+    width: 122px;
+    height: 34px;
+    padding: 45px;
+    
+}
+
+.logo {
+    width: 122px;
+    height: 34px;
+}
+.copy {    
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: auto;
+    width: 515px;
+    font-size: 24px;
+    font-weight: 500;
+}
