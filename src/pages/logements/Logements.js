@@ -27,7 +27,7 @@ const Logements = () => {
       <Header />
       <main>
         <h1>{logement.title}</h1>
-        <div>Tags:
+        <div>
           {tagsName}</div>
         <img src={logement.cover} alt={logement.title} className="logements_img" />
       </main>

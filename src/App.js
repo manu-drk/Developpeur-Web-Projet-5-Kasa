@@ -4,7 +4,7 @@ import Apropos from "./pages/apropos/Apropos";
 import Home from "./pages/home/Home";
 import Error from "./pages/Error/Error";
 import Logements from "./pages/logements/Logements";
-import './App.css';
+import './App.scss';
 import logo from './logo.svg';
 
 function App() {

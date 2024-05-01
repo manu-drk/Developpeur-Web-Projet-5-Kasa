@@ -1,13 +1,13 @@
 import React from 'react';
-import './Cards.css'
+import './Cards.scss'
 
 function Cards({ image, title }) {
     return (
         <div className="cards">
-            <img src={image} alt={title} className="card_img" />
+            <img src={image} alt={title} className="cards_img" />
             
 
-            <h2 className="card_title">{title}</h2>
+            <h2 className="cards_title">{title}</h2>
         </div>
     );
 }
