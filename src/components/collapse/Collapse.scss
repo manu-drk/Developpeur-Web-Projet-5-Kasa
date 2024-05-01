@@ -1,5 +1,9 @@
 @import '../../App.scss';
 
+$transition-speed: 0.3s;
+$transition-slow-speed: 1.3s;
+$rotate-angle: 180deg;
+
 .Collapse-container {
     display: flex;
     flex-direction: column;
@@ -11,18 +15,18 @@
         flex-direction: column;
         width: 1023px;
         border-radius: 5px;
-        // gap: 15px;
         margin-bottom: 30px;
 
         &.open {
             .Collapse_title img {
-                transform: rotate(180deg);
+                transform: rotate($rotate-angle);
             }
 
             .Collapse_content {
                 display: block;
                 opacity: 1;
-                width: 100%;
+                transition: $transition-slow-speed;
+                max-height: 1000px; 
             }
         }
 
@@ -48,7 +52,7 @@
                 width: 15px;
                 color: $tertiary-color;
                 right: 15px;
-                transition: transform 0.3s ease;
+                transition: transform $transition-speed ease;
             }
 
             &:hover {
@@ -59,8 +63,10 @@
         .Collapse_content {
             display: none;
             opacity: 0;
+            overflow: hidden; 
             background-color: $secondary-color;
-            transition: opacity 0.3s ease;
+            transition: $transition-slow-speed;
+            
 
             p {
                 color: $footer-color;
@@ -72,14 +78,6 @@
         }
     }
 }
-
-
-
-
-
-
-
-
 
 
 

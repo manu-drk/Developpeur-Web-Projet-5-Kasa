@@ -1,10 +1,20 @@
 import React from "react";
-
+import Notfound from "../../components/notfound/Notfound";
+import Footer from "../../components/footer/Footer";
+import Header from "../../components/header/Header";
 
 const Error = () => {
-<div className="Error">
-
-</div>
+    return (
+        <>
+            <div className="Error">
+                <Header />
+                <main>
+                    <Notfound />
+                </main>
+                <Footer />
+            </div>
+        </>
+    );
 };
 
 export default Error;

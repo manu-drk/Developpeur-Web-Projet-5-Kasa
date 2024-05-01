@@ -1,11 +1,12 @@
+@import '../../App.scss';
 
 .home_gallery {
     width: 1240px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    margin: 40px auto;
-    background-color: #E3E3E3;
+    margin: 40px auto;    
+    background-color: $secondary-color;
     border-radius: 10px;
     
     }

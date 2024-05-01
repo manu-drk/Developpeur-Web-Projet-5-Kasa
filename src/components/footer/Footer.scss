@@ -1,0 +1,68 @@
+@import '../../App.scss';
+
+.footer {
+    background-color: $footer-color;
+    height: 209px;
+    width: 100%;
+
+    &__fig {
+        display: flex;
+        justify-content: center;
+        color: $tertiary-color;
+        margin: 0 auto;
+        width: 122px;
+        height: 34px;
+        padding: 45px;
+
+        .logo {
+            width: 122px;
+            height: 34px;
+        }
+    }
+
+    .copy {
+        display: flex;
+        justify-content: center;
+        color: $tertiary-color;
+        margin: auto;
+        width: 515px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+
+
+
+// @import '../../App.scss';
+
+// .footer {
+//     background-color: $footer-color;
+//     height: 209px;
+//     width: 100%;
+//     }
+
+// .footer__fig {
+//     display: flex;
+//     justify-content: center;
+//     color: $tertiary-color;
+//     margin: 0 auto;
+//     width: 122px;
+//     height: 34px;
+//     padding: 45px;
+    
+// }
+
+// .logo {
+//     width: 122px;
+//     height: 34px;
+// }
+// .copy {    
+//     display: flex;
+//     justify-content: center;
+//     color: $tertiary-color;
+//     margin: auto;
+//     width: 515px;
+//     font-size: 24px;
+//     font-weight: 500;
+// }

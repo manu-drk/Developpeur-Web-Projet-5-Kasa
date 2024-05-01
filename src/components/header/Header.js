@@ -1,7 +1,7 @@
 import logo from "../../assets/LOGO.png";
 // import Nav from "../nav/Nav";
 import { Link } from "react-router-dom";
-import './Header.css'
+import './Header.scss'
 
 
 export default function Header() {
