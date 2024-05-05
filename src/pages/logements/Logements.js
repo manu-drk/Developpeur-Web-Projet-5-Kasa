@@ -6,6 +6,7 @@ import Footer from "../../components/footer/Footer";
 import logements from "../../datas/logements.json";
 // import Tag from "../../components/tag/Tag";
 import Slideshow from '../../components/Slideshow/Slideshow';
+import Collapse from "../../components/collapse/Collapse";
 import './Logements.scss';
 
 const Logements = () => {
@@ -18,22 +19,54 @@ const Logements = () => {
     setLogementData(data);
   }, [logements, id]);
 
+  //   const Collapsedecription = logements.description.map((description, i) => (
+  //     return (
+  //     <ul key={i}>
+  //       <li>{description}</li>
+  //     </ul>
+  //   );
+  // ));
+
+  // const equipements = logements.equipments.map((equipment, i) => {
+  //   return (
+  //     <ul key={i}>
+  //       <li>{equipment}</li>
+  //     </ul>
+  //   );
+  // });
+
+
   return (
     <div className="logementsContainer">
-<Header />
-    <div className="logement-details">
-      {logementData && <Slideshow pictures={logementData.pictures} />}
-      {/* Affichage du tagName */}
-      {logementData && (
-        <div>
-          <h2 className="logement-title">{logementData.title}</h2>
-          <p className="logement-tag">Tag: {tagName}</p>
-          <p className="logement-description">{logementData.description}</p>
-          {/* Ajoutez d'autres détails du logement ici */}
-        </div>
-      )}
-    </div>
-    <Footer />
+      <Header />
+      <div className="logement-details">
+        {logementData && <Slideshow pictures={logementData.pictures} />}
+        {/* Affichage du tagName */}
+        {logementData && (
+          <div>
+            <h2 className="logement-title">{logementData.title}</h2>
+            <p className="logement-tag">Tag: {tagName}</p>
+            <div className="Collapse-logements">
+              <Collapse className="Collapse-description" title="Description">
+                {/* Boucle à travers les descriptions */}
+                {logementData.description.split('. ').map((desc, index) => (
+                  <p key={index}>{desc}</p>
+                ))}
+              </Collapse>
+
+              <Collapse className="Collapse-equipement" title="Équipements">
+                <ul>
+                  {logementData.equipments.map((equipment, index) => (
+                    <li key={index}>{equipment}</li>
+                  ))}
+                </ul>
+              </Collapse>
+            </div>
+            {/* Ajoutez d'autres détails du logement ici */}
+          </div>
+        )}
+      </div>
+      <Footer />
     </div>
   );
 };

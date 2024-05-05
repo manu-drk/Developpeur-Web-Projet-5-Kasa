@@ -5,6 +5,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import Collapse from "../../components/collapse/Collapse";
 import imgAproposBanner from "../../assets/banner/aproposBanner.jpeg";
+import './Apropos.scss';
 
 const DEFAULT_COLLAPSE = [
     {

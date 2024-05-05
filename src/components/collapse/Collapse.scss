@@ -9,13 +9,15 @@ $rotate-angle: 180deg;
     flex-direction: column;
     border-radius: 5px;
     align-items: center;
+    width: 100%;
 
     .Collapse {
         display: flex;
         flex-direction: column;
-        width: 1023px;
+        // width: 1023px;
         border-radius: 5px;
         margin-bottom: 30px;
+        width: 85%;
 
         &.open {
             .Collapse_title img {
