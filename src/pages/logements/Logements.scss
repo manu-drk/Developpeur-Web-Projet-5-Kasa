@@ -1,5 +1,6 @@
 @import '../../App.scss';
 
+
 .logement-details {
     display: flex;
     justify-content: center;
@@ -14,27 +15,37 @@
     color: $primary-color;
 }
 
-
 .logement-tag {
     display: flex;
 }
 
-
-.logement-description {
-    display: flex;
-}
 .Collapse-logements {
     display: flex;
     flex-direction: row;
     width: 1240px;
 }
 
-.Collapse-description {
-    display: flex;
-    width: 582px;
-}
-
+.Collapse-description,
 .Collapse-equipement {
-    display: flex;
-    width: 582px;
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: $secondary-color;
+    
+
+    p,
+    ul {
+        font-size: 19px;
+        height: auto;
+        color: black;
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    &.open {
+        height: auto;
+        max-height: 1000px;
+        overflow: visible;
+        
+    }
 }
