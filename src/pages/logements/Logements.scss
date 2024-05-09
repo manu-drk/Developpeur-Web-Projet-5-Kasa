@@ -10,42 +10,89 @@
 
 .logement-title {
     display: flex;
-    height: 77px;
-    width: 635px;
+    // height: 77px;
+    // width: 635px;
+    font-size: 36px;
     color: $primary-color;
 }
 
-.logement-tag {
-    display: flex;
+.logement-location {
+display: flex;
+height: 26px;
+// width: 175px;
+font-size: 18px;
 }
 
+.logement-tags {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 27px 0px 27px 0px;
+
+}
+.logement-tag {
+    display: flex;
+    height: 25px;
+    gap: 10px;
+    background-color: $primary-color;
+    color: white;
+    width: 150px;
+    border-radius: 5px;
+    justify-content: center
+
+}
+
+// .Collapse-container {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: flex-start;
+// }
 .Collapse-logements {
     display: flex;
     flex-direction: row;
     width: 1240px;
-}
+    gap: 76px;
 
-.Collapse-description,
-.Collapse-equipement {
-    width: 100%;
-    margin-bottom: 20px;
-    overflow: hidden;
-    background-color: $secondary-color;
     
 
-    p,
-    ul {
-        font-size: 19px;
-        height: auto;
-        color: black;
-        padding-left: 20px;
-        margin: 0;
-    }
+.Collapse-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    // width: 100%;
 
-    &.open {
-        height: auto;
-        max-height: 1000px;
-        overflow: visible;
+    .Collapse_title {
+        width: 100%;
+
+    .Collapse-description,
+    .Collapse-equipement {
+        width: 100%;
+        margin-bottom: 20px;
+        overflow: hidden;
+        background-color: $secondary-color;
+
         
+        
+        p,
+        ul {
+            font-size: 19px;
+            height: auto;
+            color: black;
+            padding-left: 20px;
+            margin: 0;
+            width: 100%;
+        }
+
+        li {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &.open {
+            height: auto;
+            max-height: 1000px;
+            overflow: visible;
+        }
     }
-}
+}}}
+

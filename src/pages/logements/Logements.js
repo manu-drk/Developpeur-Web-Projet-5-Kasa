@@ -8,7 +8,8 @@ import Collapse from "../../components/collapse/Collapse";
 import './Logements.scss';
 
 const Logements = () => {
-  const { id, tagName } = useParams();
+  // const { id, tagName } = useParams();
+  const { id } = useParams();
   const [logementData, setLogementData] = useState(null);
 
   useEffect(() => {
@@ -35,34 +36,42 @@ const Logements = () => {
         {logementData && (
           <div>
             <h2 className="logement-title">{logementData.title}</h2>
-            <p className="logement-tag">Tag: {tagName}</p>
+
+            <div className="logement-location">{logementData.location}
+              
+              </div>
+
+            <div className="logement-tags">
+              {logementData.tags.map((tag, index) => (
+                <span key={index} className="logement-tag">{tag}</span>
+              ))}</div>
+
             <div className="Collapse-logements">
               <Collapse
-              
+
                 className={`Collapse-description ${isDescriptionOpen ? "open" : ""}`}
-                title="Description"
+                title="Description" content={logementData.description}
                 isOpen={isDescriptionOpen}
                 onToggle={toggleDescription}
               >
-                {logementData.description.split('. ').map((desc, index) => {
-        console.log("After split:", desc);
-        return <p key={index}>{desc}</p>;
-    })}
-                
+                return (
+                <p>{logementData.description}</p>;
+                );
 
               </Collapse>
 
               <Collapse
                 className={`Collapse-equipement ${isEquipementOpen ? "open" : ""}`}
-                title="Équipements"
+                title="Équipements" content={logementData.equipments}
                 isOpen={isEquipementOpen}
                 onToggle={toggleEquipement}
               >
-                <ul>
-                  {logementData.equipments.map((equipment, index) => (
-                    <li key={index}>{equipment}</li>
-                  ))}
+                return (   
+                  <ul>
+                  <li>{logementData.equipments}</li>;
                 </ul>
+                );
+
               </Collapse>
             </div>
           </div>
