@@ -17,10 +17,11 @@
 }
 
 .logement-location {
-display: flex;
-height: 26px;
-// width: 175px;
-font-size: 18px;
+    display: flex;
+    height: 26px;
+    // width: 175px;
+    font-size: 18px;
+    font-family: $primary-font;
 }
 
 .logement-tags {
@@ -30,18 +31,38 @@ font-size: 18px;
     padding: 27px 0px 27px 0px;
 
 }
+
 .logement-tag {
     display: flex;
     height: 25px;
     gap: 10px;
     background-color: $primary-color;
     color: white;
+    font-size: 18px;
     width: 150px;
-    border-radius: 5px;
-    justify-content: center
+    border-radius: 15px;
+    justify-content: center;
+    font-family: $primary-font;
+    align-items: center;
 
 }
+.rating {
+    display: flex;
+    flex-direction: row;
+    // width: 196px;
+    justify-content: flex-end;
 
+}
+.rating-stars {
+    display: flex;
+    flex-direction: row;
+
+}
+.rating-stars img{
+    
+    height: 36px;
+    width: 36px;
+}
 // .Collapse-container {
 //     display: flex;
 //     flex-direction: row;
@@ -55,44 +76,49 @@ font-size: 18px;
 
     
 
-.Collapse-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    // width: 100%;
+    .Collapse-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        // width: 100%;
 
-    .Collapse_title {
-        width: 100%;
-
-    .Collapse-description,
-    .Collapse-equipement {
-        width: 100%;
-        margin-bottom: 20px;
-        overflow: hidden;
-        background-color: $secondary-color;
-
-        
-        
-        p,
-        ul {
-            font-size: 19px;
-            height: auto;
-            color: black;
-            padding-left: 20px;
-            margin: 0;
+        .Collapse_title {
             width: 100%;
-        }
 
-        li {
-            display: flex;
-            flex-direction: column;
-        }
+            .Collapse-description,
+            .Collapse-equipement {
+                width: 100%;
+                margin-bottom: 20px;
+                overflow: hidden;
+                background-color: $secondary-color;
 
-        &.open {
-            height: auto;
-            max-height: 1000px;
-            overflow: visible;
+
+
+                // p {
+                //     font-size: 19px;
+                //     height: auto;
+                //     color: black;
+                //     padding-left: 20px;
+                //     margin: 0;
+                //     width: 100%;
+                // }
+
+                // ul {
+                //     display: flex; /* Ajoutez cette ligne */
+                //     flex-direction: column; /* Ajoutez cette ligne */
+                // }
+
+                // li {
+                //     display: flex;
+                //     flex-direction: column;
+                // }
+
+                &.open {
+                    height: auto;
+                    max-height: 1000px;
+                    overflow: visible;
+                }
+            }
         }
     }
-}}}
-
+}

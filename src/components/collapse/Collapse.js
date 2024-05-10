@@ -17,8 +17,22 @@ function Collapse({ title, content }) {
                 <h2>{title}</h2>
                 <img src={flechUp} alt={open ? "Up" : "Down"} className={open ? "Collapse_title_img rotate" : "Collapse_title_img"} />
             </div>
-            <div className='Collapse_content'>
+            {/* <div className='Collapse_content'>
             {open && <p>{content}</p>}</div>
+        </div> */}
+        <div className='Collapse_content'>
+                    {open && (
+                        Array.isArray(content) ? (
+                            <ul>
+                                {content.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                ))}
+                            </ul>
+                        ) : (
+                            <p>{content}</p>
+                        )
+                    )}
+                </div>
         </div>
         </div>
     );

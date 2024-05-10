@@ -45,6 +45,7 @@ $rotate-angle: 180deg;
                 color: $tertiary-color;
                 font-size: 24px;
                 font-weight: 500;
+                font-family: $primary-font;
             }
 
             img {
@@ -68,18 +69,35 @@ $rotate-angle: 180deg;
             overflow: hidden; 
             background-color: $secondary-color;
             transition: $transition-slow-speed;
+            padding: 15px;
             
-
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+        
+            li {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+                font-size: 18px;
+                font-weight: 400;
+                font-family: $primary-font;
+                
+            }
             p {
                 color: $footer-color;
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: 400;
-                margin-left: 15px;
-                margin-right: 15px;
+                // margin-left: 15px;
+                // margin-right: 15px;
+                
+                font-family: $primary-font;
             }
-        }
+
+            
     }
-}
+}}
 
 
 

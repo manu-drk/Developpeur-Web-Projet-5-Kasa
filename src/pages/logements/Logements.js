@@ -5,6 +5,8 @@ import Footer from "../../components/footer/Footer";
 import logements from "../../datas/logements.json";
 import Slideshow from '../../components/Slideshow/Slideshow';
 import Collapse from "../../components/collapse/Collapse";
+import starf from '../../assets/starf.png';
+import stare from '../../assets/stare.png';
 import './Logements.scss';
 
 const Logements = () => {
@@ -28,6 +30,18 @@ const Logements = () => {
     setIsEquipementOpen(!isEquipementOpen);
   };
 
+  const renderRatingStars = (rating) => {
+    const stars = [];
+    for (let i = 1; i <= 5; i++) {
+      if (i <= rating) {
+        stars.push(<img key={i} src={starf} alt="Etoile-pleine" />);
+      } else {
+        stars.push(<img key={i} src={stare} alt="Etoile-vide" />);
+      }
+    }
+    return stars;
+  };
+
   return (
     <div className="logementsContainer">
       <Header />
@@ -38,14 +52,19 @@ const Logements = () => {
             <h2 className="logement-title">{logementData.title}</h2>
 
             <div className="logement-location">{logementData.location}
-              
-              </div>
+
+            </div>
 
             <div className="logement-tags">
               {logementData.tags.map((tag, index) => (
                 <span key={index} className="logement-tag">{tag}</span>
               ))}</div>
-
+            <div className="rating">
+              {/* <p>{logementData.rating}</p> */}
+              <div className="rating-stars">
+                {renderRatingStars(parseInt(logementData.rating))}
+              </div>
+            </div>
             <div className="Collapse-logements">
               <Collapse
 
@@ -66,13 +85,14 @@ const Logements = () => {
                 isOpen={isEquipementOpen}
                 onToggle={toggleEquipement}
               >
-                return (   
-                  <ul>
+                return (
+                <ul>
                   <li>{logementData.equipments}</li>;
                 </ul>
                 );
 
               </Collapse>
+
             </div>
           </div>
         )}
