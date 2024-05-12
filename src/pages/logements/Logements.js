@@ -49,57 +49,68 @@ const Logements = () => {
         {logementData && <Slideshow pictures={logementData.pictures} />}
         {logementData && (
           <div>
-            <h2 className="logement-title">{logementData.title}</h2>
-
-            <div className="logement-location">{logementData.location}
-
-            </div>
-
-            <div className="logement-tags">
-              {logementData.tags.map((tag, index) => (
-                <span key={index} className="logement-tag">{tag}</span>
-              ))}</div>
-            <div className="rating">
-              {/* <p>{logementData.rating}</p> */}
-              <div className="rating-stars">
-                {renderRatingStars(parseInt(logementData.rating))}
+            <div className="logement-title-container">
+              <h2 className="logement-title">{logementData.title}</h2>
+              <div className="host">
+                <img src={logementData.host.picture} alt={logementData.host.name} />
+                <span>{logementData.host.name}</span>
               </div>
             </div>
-            <div className="Collapse-logements">
-              <Collapse
+            <div className="logement-location">{logementData.location}</div>
 
-                className={`Collapse-description ${isDescriptionOpen ? "open" : ""}`}
-                title="Description" content={logementData.description}
-                isOpen={isDescriptionOpen}
-                onToggle={toggleDescription}
-              >
-                return (
-                <p>{logementData.description}</p>;
-                );
 
-              </Collapse>
 
-              <Collapse
-                className={`Collapse-equipement ${isEquipementOpen ? "open" : ""}`}
-                title="Équipements" content={logementData.equipments}
-                isOpen={isEquipementOpen}
-                onToggle={toggleEquipement}
-              >
-                return (
-                <ul>
-                  <li>{logementData.equipments}</li>;
-                </ul>
-                );
+            <div className="tags-rating-container">
+              <div className="logement-tags">
+                {logementData.tags.map((tag, index) => (
+                  <span key={index} className="logement-tag">{tag}</span>
+                ))}</div>
+              <div className="rating">
+                {/* <p>{logementData.rating}</p> */}
+                <div className="rating-stars">
+                  {renderRatingStars(parseInt(logementData.rating))}
+                </div>
+              </div>
+              </div>
 
-              </Collapse>
+                <div className="Collapse-logements">
+                  <Collapse
 
-            </div>
-          </div>
+                    className={`Collapse-description ${isDescriptionOpen ? "open" : ""}`}
+                    title="Description" content={logementData.description}
+                    isOpen={isDescriptionOpen}
+                    onToggle={toggleDescription}
+                  >
+                    return (
+                    <p>{logementData.description}</p>;
+                    );
+
+                  </Collapse>
+
+                  <Collapse
+                    className={`Collapse-equipement ${isEquipementOpen ? "open" : ""}`}
+                    title="Équipements" content={logementData.equipments}
+                    isOpen={isEquipementOpen}
+                    onToggle={toggleEquipement}
+                  >
+                    return (
+                    <ul>
+                      <li>{logementData.equipments}</li>;
+                    </ul>
+                    );
+
+                  </Collapse>
+
+                </div>
+              </div>
+              
         )}
-      </div>
-      <Footer />
-    </div>
-  );
+        
+            </div>
+            
+            <Footer />
+          </div>
+        );
 };
 
-export default Logements;
+        export default Logements;
