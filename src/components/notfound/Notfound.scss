@@ -1,36 +1,108 @@
 @import '../../App.scss';
 
 .error_Container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
 
-}
-
-.error_Container__Number {
+  &__Number {
     display: flex;
     align-items: center;
     width: 600px;
-    height: 0px;
+    height: 263px;
     font-size: 288px;
     color: $primary-color;
-}
+    justify-content: center;
+    margin-top: 20px;
+    font-family: $primary-font;
+    font-weight: 700;
+  }
 
-.error_Container__Text {
+  &__Text {
     display: flex;
     height: 52px;
     width: 872px;
     color: $primary-color;
     justify-content: center;
+    font-weight: 500;
     font-size: 36px;
-}
+    font-family: $primary-font;
+    margin-top: 100px;
+  }
 
-.errorContainer__Link {
+  &__Link {
     display: flex;
     justify-content: center;
     width: 285px;
     height: 26px;
     font-size: 18px;
+    font-family: $primary-font;
+    font-weight: 500;
+    color: $footer-color;
+    margin-top: 100px;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @import '../../App.scss';
+
+
+// .error_Container {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     height: 800px;
+
+// }
+
+// .error_Container__Number {
+//     display: flex;
+//     align-items: center;
+//     width: 600px;
+//     height: 263px;
+//     font-size: 288px;
+//     color: $primary-color;
+//     justify-content: center;
+//     margin-top: 20px;
+//     font-family: $primary-font;
+//     font-weight: 700;
+// }
+
+// .error_Container__Text {
+//     display: flex;
+//     height: 52px;
+//     width: 872px;
+//     color: $primary-color;
+//     justify-content: center;
+//     font-weight: 500;
+//     font-size: 36px;
+//     font-family: $primary-font;
+//     margin-top: 100px;
+// }
+
+// .errorContainer__Link {
+//     display: flex;
+//     justify-content: center;
+//     width: 285px;
+//     height: 26px;
+//     font-size: 18px;
+//     font-family: $primary-font;
+//     font-weight: 500;
+//     color: $footer-color;
+//     margin-top: 100px;
+// }

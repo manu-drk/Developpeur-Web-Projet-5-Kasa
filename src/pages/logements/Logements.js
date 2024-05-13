@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import logements from "../../datas/logements.json";
@@ -10,14 +11,34 @@ import stare from '../../assets/stare.png';
 import './Logements.scss';
 
 const Logements = () => {
-  // const { id, tagName } = useParams();
   const { id } = useParams();
+  const navigate = useNavigate();
   const [logementData, setLogementData] = useState(null);
 
   useEffect(() => {
+    // Vérification si l'ID est présent le json logements
     const data = logements.find((item) => item.id === id);
-    setLogementData(data);
-  }, [logements, id]);
+    if (!data) {
+      // Redirection vers la page d'erreur si l'ID n'est pas trouvé dans les données
+      navigate("/error");
+    } else {
+      setLogementData(data);
+    }
+  }, [logements, id, navigate]);
+
+
+
+
+
+// const Logements = () => {
+  
+//   const { id } = useParams();
+//   const [logementData, setLogementData] = useState(null);
+
+//   useEffect(() => {
+//     const data = logements.find((item) => item.id === id);
+//     setLogementData(data);
+//   }, [logements, id]);
 
   const [isDescriptionOpen, setIsDescriptionOpen] = useState(true);
   const [isEquipementOpen, setIsEquipementOpen] = useState(false);
