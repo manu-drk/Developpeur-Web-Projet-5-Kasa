@@ -31,7 +31,12 @@
     }
 }
 
-
+@media (max-width: $small-screen) {
+    .footer {
+        width: $min-width;
+        
+    }
+}
 
 
 // @import '../../App.scss';

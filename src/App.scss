@@ -5,6 +5,17 @@ $footer-color: #000000;
 $background-color: rgba(0, 0, 0, 0.3);
 $primary-font: 'Montserrat', sans-serif;
 
+$header-width: 1240px;
+$header-height: 70px;
+$header-margin: 40px;
+$header-logo-width: 210px;
+$header-logo-height: 68px;
+$nav-link-margin: 40px;
+$nav-link-color: $footer-color;
+$nav-link-font-size: 24px;
+$small-screen: 375px;
+$min-width: 375px;
+
 
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 

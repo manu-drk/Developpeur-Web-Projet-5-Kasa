@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .carousel {
     display: flex;
     position: relative;
@@ -5,31 +7,42 @@
     height: 415px;
     width: 1240px;
     border-radius: 25px;
+
+    .carouselImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    .counter {
+        display: flex;
+        position: absolute;
+        color: $tertiary-color;
+        top: 85%;
+        left: 50%;
+        font-size: 18px;
+        font-family: $primary-font;
+    }
+    .carouselPrev,
+    .carouselNext {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        &.carouselPrev {
+            left: 0;
+        }
+
+        &.carouselNext {
+            right: 0;
+        }
+    }
 }
 
-.carouselImage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 25px;
-
-}
-
-.carouselPrev {
-    display: flex;
-    position: absolute;
-
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-
-}
-
-.carouselNext {
-    display: flex;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-
-}
+// .counter {
+//     display: flex;
+//     position: absolute;
+//     color: $tertiary-color;
+// }

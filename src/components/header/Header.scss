@@ -1,13 +1,6 @@
 @import '../../App.scss';
 
-$header-width: 1240px;
-$header-height: 70px;
-$header-margin: 40px;
-$header-logo-width: 210px;
-$header-logo-height: 68px;
-$nav-link-margin: 40px;
-$nav-link-color: $footer-color;
-$nav-link-font-size: 24px;
+
 
 .header {
     display: flex;
@@ -47,7 +40,12 @@ $nav-link-font-size: 24px;
     }
 }
 
-
+@media (max-width: $small-screen) {
+    .header {
+        width: $min-width;
+        
+    }
+}
 
 // @import '../../App.scss';
 

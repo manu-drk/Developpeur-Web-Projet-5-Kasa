@@ -11,7 +11,7 @@ const Gallery = () => {
                 return (
                     <article key={logement.id}>
                         <Link to={`/logements/${logement.id}`}>
-                        {/* <Link to={`/logements/${logement.id}/${logement.tags[0]}`}> */}
+                        
                             <Cards image={logement.cover} title={logement.title} />
                         </Link>
                     </article>
