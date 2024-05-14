@@ -43,8 +43,19 @@
 @media (max-width: $small-screen) {
     .header {
         width: $min-width;
-        
+
+        &-logo {
+            width: $header-logo-min-width;
+            height: $header-logo-min-height;
+        }
+
+        .nav-header {
+            width: $min-width;
+        }
     }
+
+
+
 }
 
 // @import '../../App.scss';

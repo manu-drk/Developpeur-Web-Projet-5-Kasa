@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .banner {
     display: flex;
     position: relative;
@@ -47,8 +49,12 @@
 }
 
 @media (max-width: $small-screen) {
-    .footer {
+    .banner {
         width: $min-width;
+        
+    }
+    .banner-txt{
+        width: 225px;
         
     }
 }
