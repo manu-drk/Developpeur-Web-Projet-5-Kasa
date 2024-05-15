@@ -40,6 +40,24 @@
     }
 }
 
+@media (max-width: $medium-screen) {
+    .header {
+        width: $med1-width;
+
+        &-logo {
+            width: $header-logo-min-width;
+            height: $header-logo-min-height;
+        }
+
+        .nav-header {
+            width: $min-width;
+        }
+    }
+
+
+
+}
+
 @media (max-width: $small-screen) {
     .header {
         width: $min-width;
@@ -50,8 +68,15 @@
         }
 
         .nav-header {
-            width: $min-width;
+            width: $min3-width;
+            justify-content: center;
+
+            a {
+                margin-left: $nav-link-margin-small;
+                font-size: $nav-link-font-small-size;
+            }
         }
+
     }
 
 

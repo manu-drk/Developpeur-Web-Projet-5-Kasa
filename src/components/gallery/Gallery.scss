@@ -11,9 +11,21 @@
     
     }
 
+    @media (max-width: $medium-screen) {
+        .home_gallery {
+            width: $med-width;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
     @media (max-width: $small-screen) {
         .home_gallery {
-            width: $min-width;
+            width: $min1-width;
             grid-template-columns: repeat(1, 1fr);
+        }
+        .art {
+            width: $min2-width;
+        }
+        .cards {
+            width: $min3-width;
         }
     }

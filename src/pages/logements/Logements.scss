@@ -120,6 +120,29 @@
     }
 }
 
+@media (max-width: $medium-screen) {
+    .logement-details {
+        width: $med1-width;
+
+    }
+    .Collapse-logements {
+        width: $med1-width;
+    }
+}
+
+@media (max-width: $small-screen) {
+    .logement-details {
+        width: $min-width;
+        flex-direction: column;
+
+    }
+    .Collapse-logements {
+        flex-direction: column;
+        width: $med-width;
+        align-items: center
+    }
+}
+
 
 
 // @import '../../App.scss';

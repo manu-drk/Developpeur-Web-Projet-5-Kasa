@@ -31,11 +31,24 @@
     }
 }
 
+@media (max-width: $medium-screen) {
+    .footer {
+        width: $med1-width;
+        
+    }
+}
 @media (max-width: $small-screen) {
     .footer {
         width: $min-width;
+        .copy {
         
+            width: 133px;
+            font-size: $nav-link-font-small-size;
+            align-items: center;
+            
+        } 
     }
+    
 }
 
 

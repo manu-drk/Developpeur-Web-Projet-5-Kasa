@@ -14,6 +14,7 @@
         object-fit: cover;
         border-radius: 25px;
     }
+
     .counter {
         display: flex;
         position: absolute;
@@ -23,6 +24,7 @@
         font-size: 18px;
         font-family: $primary-font;
     }
+
     .carouselPrev,
     .carouselNext {
         display: flex;
@@ -41,8 +43,18 @@
     }
 }
 
-// .counter {
-//     display: flex;
-//     position: absolute;
-//     color: $tertiary-color;
-// }
+@media (max-width: $medium-screen) {
+    .carousel {
+        width: $med1-width;
+
+    }
+}
+
+@media (max-width: $small-screen) {
+    .carousel {
+        width: $min-width;
+
+        .carouselPrev,
+        .carouselNext {}
+    }
+}

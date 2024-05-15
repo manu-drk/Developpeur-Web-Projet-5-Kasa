@@ -113,3 +113,20 @@ $rotate-angle: 180deg;
 }}
 
 
+@media (max-width: $medium-screen) {
+    .Collapse-container {
+        width: $med1-width;
+
+    }
+    
+}
+
+@media (max-width: $small-screen) {
+    .Collapse-container {
+        width: $min-width;
+        flex-direction: column;
+        align-items: center
+
+    }
+    
+}

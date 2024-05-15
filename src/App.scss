@@ -9,14 +9,24 @@ $header-width: 1240px;
 $header-height: 70px;
 $header-margin: 40px;
 $header-logo-width: 210px;
+$header-logo-min-width: 145px;
 $header-logo-height: 68px;
+$header-logo-min-height: 46px;
 $nav-link-margin: 40px;
+$nav-link-margin-small: 20px;
 $nav-link-color: $footer-color;
 $nav-link-font-size: 24px;
+$nav-link-font-small-size: 12px;
 $small-screen: 375px;
+$medium-screen: 900px;
+$med1-width: 900px;
+$med-width: 850px;
 $min-width: 375px;
-$header-logo-min-width: 145px;
-$header-logo-min-height: 46px;
+$min1-width: 335px;
+$min2-width: 305px;
+$min3-width: 295px;
+
+
 
 
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
