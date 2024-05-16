@@ -2,18 +2,22 @@
 
 .cards {
     display: flex;
-    width: 340px;
-    height: 340px;
+    width: 100%;
+    height: 100%;
+    // width: 340px;
+    // height: 340px;
     position: relative;    
     border-radius: 10px;    
     overflow: hidden;    
-    margin-top: 20px;
-    margin-bottom: 20px;
+    // margin-top: 20px;
+    // margin-bottom: 20px;
 
     &_img {
         width: 100%;
         height: 100%;
         object-fit: cover; 
+        min-width: 100%; 
+        min-height: 100%; 
     }
 
     &_title {

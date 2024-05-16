@@ -61,10 +61,15 @@
 @media (max-width: $small-screen) {
     .header {
         width: $min-width;
+        margin: 10px auto;
 
         &-logo {
             width: $header-logo-min-width;
             height: $header-logo-min-height;
+        }
+        &__fig {
+            margin-left: 17px;
+            width: $header-logo-min-width;
         }
 
         .nav-header {

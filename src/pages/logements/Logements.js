@@ -30,15 +30,15 @@ const Logements = () => {
 
 
 
-// const Logements = () => {
-  
-//   const { id } = useParams();
-//   const [logementData, setLogementData] = useState(null);
+  // const Logements = () => {
 
-//   useEffect(() => {
-//     const data = logements.find((item) => item.id === id);
-//     setLogementData(data);
-//   }, [logements, id]);
+  //   const { id } = useParams();
+  //   const [logementData, setLogementData] = useState(null);
+
+  //   useEffect(() => {
+  //     const data = logements.find((item) => item.id === id);
+  //     setLogementData(data);
+  //   }, [logements, id]);
 
   const [isDescriptionOpen, setIsDescriptionOpen] = useState(true);
   const [isEquipementOpen, setIsEquipementOpen] = useState(false);
@@ -71,67 +71,95 @@ const Logements = () => {
         {logementData && (
           <div>
             <div className="logement-title-container">
-              <h2 className="logement-title">{logementData.title}</h2>
-              <div className="host">
+              {/* <h2 className="logement-title">{logementData.title}</h2> */}
+              {/* <div className="host">
                 <img src={logementData.host.picture} alt={logementData.host.name} />
                 <span>{logementData.host.name}</span>
-              </div>
+              </div> */}
             </div>
-            <div className="logement-location">{logementData.location}</div>
+            {/* <div className="logement-location">{logementData.location}</div> */}
 
+            <div className="section_2_logements">
 
-
-            <div className="tags-rating-container">
+            <div className="logements_info_container">
+              <h2 className="logement-title">{logementData.title}</h2>
+              <div className="logement-location">{logementData.location}</div>
               <div className="logement-tags">
                 {logementData.tags.map((tag, index) => (
                   <span key={index} className="logement-tag">{tag}</span>
                 ))}</div>
+            </div>
+
+            <div className="host_rating_container">
+              <div className="host">
+                <img src={logementData.host.picture} alt={logementData.host.name} />
+                <span>{logementData.host.name}</span>
+              </div>
               <div className="rating">
-                {/* <p>{logementData.rating}</p> */}
+
                 <div className="rating-stars">
                   {renderRatingStars(parseInt(logementData.rating))}
                 </div>
               </div>
-              </div>
-
-                <div className="Collapse-logements">
-                  <Collapse
-
-                    className={`Collapse-description ${isDescriptionOpen ? "open" : ""}`}
-                    title="Description" content={logementData.description}
-                    isOpen={isDescriptionOpen}
-                    onToggle={toggleDescription}
-                  >
-                    return (
-                    <p>{logementData.description}</p>;
-                    );
-
-                  </Collapse>
-
-                  <Collapse
-                    className={`Collapse-equipement ${isEquipementOpen ? "open" : ""}`}
-                    title="Équipements" content={logementData.equipments}
-                    isOpen={isEquipementOpen}
-                    onToggle={toggleEquipement}
-                  >
-                    return (
-                    <ul>
-                      <li>{logementData.equipments}</li>;
-                    </ul>
-                    );
-
-                  </Collapse>
-
-                </div>
-              </div>
-              
-        )}
-        
             </div>
-            
-            <Footer />
+            </div>
+
+
+
+            <div className="tags-rating-container">
+              {/* <div className="logement-tags">
+                {logementData.tags.map((tag, index) => (
+                  <span key={index} className="logement-tag">{tag}</span>
+                ))}</div> */}
+
+
+              {/* <p>{logementData.rating}</p> */}
+              {/* <div className="rating">
+                
+                <div className="rating-stars">
+                  {renderRatingStars(parseInt(logementData.rating))}
+                </div>
+              </div> */}
+            </div>
+
+            <div className="Collapse-logements">
+              <Collapse
+
+                className={`Collapse-description ${isDescriptionOpen ? "open" : ""}`}
+                title="Description" content={logementData.description}
+                isOpen={isDescriptionOpen}
+                onToggle={toggleDescription}
+              >
+                return (
+                <p>{logementData.description}</p>;
+                );
+
+              </Collapse>
+
+              <Collapse
+                className={`Collapse-equipement ${isEquipementOpen ? "open" : ""}`}
+                title="Équipements" content={logementData.equipments}
+                isOpen={isEquipementOpen}
+                onToggle={toggleEquipement}
+              >
+                return (
+                <ul>
+                  <li>{logementData.equipments}</li>;
+                </ul>
+                );
+
+              </Collapse>
+
+            </div>
           </div>
-        );
+
+        )}
+
+      </div>
+
+      <Footer />
+    </div>
+  );
 };
 
-        export default Logements;
+export default Logements;

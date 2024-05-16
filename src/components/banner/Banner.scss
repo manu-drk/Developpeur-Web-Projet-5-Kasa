@@ -61,11 +61,14 @@
 
 @media (max-width: $small-screen) {
     .banner {
-        width: $min1-width;
+        width: 90%;
+        height: 111px;
+        margin: 20px auto; 
         
     }
     .banner-txt{
         width: 225px;
+        font-size: 24px;
         
     }
 }
