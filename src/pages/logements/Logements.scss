@@ -15,38 +15,48 @@
     margin: 0 auto;
 }
 
+.logement_info_container_wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 20px 0px;
+}
 .logements_info_container {
-    flex: 0 0 auto; /* Ajuste la taille en fonction du contenu */
-    width: 60%; /* Définit une largeur de 60% */
-    padding: 0 20px; /* Ajoute un léger espacement sur les côtés */
+    display: flex;
+    flex-direction: column;
+    width: 75%; 
+     
 }
 
 .logement-title {
     font-size: 36px;
     color: $primary-color;
-    margin: 15px 0;
-    width: fit-content; /* Taille basée sur le contenu du titre */
+    // margin: 15px 0;
+    width: fit-content; 
+    margin-bottom: 15px;
 }
 
 .logement-location {
     height: 26px;
     font-size: 18px;
     font-family: $primary-font;
+    margin-bottom: 15px;
 }
 
 .logement-tags {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 10px;
 }
 
 .logement-tag {
+    display: flex;
     height: 25px;
     padding: 15px;
     background-color: $primary-color;
     color: white;
     font-size: 18px;
-    border-radius: 15px;
+    border-radius: 10px;
     justify-content: center;
     align-items: center;
     font-family: $primary-font;
@@ -54,9 +64,9 @@
 
 .host_rating_container {
     display: flex;
-    flex: 0 0 auto; /* Ajuste la taille en fonction du contenu */
-    width: calc(40% - 20px); /* Calcule la largeur restante */
-    padding: 0 20px; /* Ajoute un léger espacement sur les côtés */
+    flex-direction: column;
+    width: 25%; 
+    // padding: 0 20px; 
 }
 
 .host {
@@ -64,11 +74,14 @@
     flex-direction: row-reverse;
     align-items: center;
     gap: 15px;
+    margin-bottom: 15px;
 }
 
 .host img {
     width: 64px;
     border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .rating {
@@ -94,12 +107,12 @@
     gap: 76px;
 }
 
-.Collapse-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 100%;
-}
+// .Collapse-container {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: flex-start;
+//     width: 100%;
+// }
 
 .Collapse_title {
     width: 100%;

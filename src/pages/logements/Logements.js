@@ -54,9 +54,10 @@ const Logements = () => {
       <div className="logementsCarrousel">
         {logementData && <Slideshow pictures={logementData.pictures} />}
       </div>
+
       <div className="section_2_logements">
-        {logementData && (
-          <div>
+        {logementData && (        
+          <div className="logement_info_container_wrapper">  
             <div className="logements_info_container">
               <h2 className="logement-title">{logementData.title}</h2>
               <div className="logement-location">{logementData.location}</div>
@@ -77,9 +78,10 @@ const Logements = () => {
                 </div>
               </div>
             </div>
-          </div>
+            </div>
         )}
       </div>
+      
       <div className="Collapse-logements">
         {logementData && (
           <>
