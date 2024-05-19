@@ -52,7 +52,9 @@
 
 @media (max-width: $small-screen) {
     .carousel {
-        width: $min-width;
+        width: 335px;
+        height: 255px;
+        margin: 10px auto;
 
         .carouselPrev,
         .carouselNext {}
