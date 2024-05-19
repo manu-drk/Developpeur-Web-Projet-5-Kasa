@@ -21,7 +21,7 @@
         color: $tertiary-color;
         top: 85%;
         left: 50%;
-        font-size: 18px;
+        font-size: 25px;
         font-family: $primary-font;
     }
 
@@ -34,11 +34,11 @@
         cursor: pointer;
 
         &.carouselPrev {
-            left: 0;
+            left: 15px;
         }
 
         &.carouselNext {
-            right: 0;
+            right: 15px;
         }
     }
 }
@@ -56,7 +56,24 @@
         height: 255px;
         margin: 10px auto;
 
+        .counter {
+
+            font-size: 15px;
+
+        }
+
         .carouselPrev,
-        .carouselNext {}
+        .carouselNext {
+            width: 10px;
+            height: 20px;
+
+            &.carouselPrev {
+                left: 5px;
+            }
+
+            &.carouselNext {
+                right: 5px;
+            }
+        }
     }
 }

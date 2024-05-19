@@ -134,10 +134,52 @@ $rotate-angle: 180deg;
         align-items: center;
         margin: 0 auto;
 
+        .Collapse {
+margin-bottom: 20px;
+
+        .Collapse_title {
+            display: flex;
+            height: 30px;
+            padding: 0 10px;
+        
+            h2 {
+                
+                font-size: 16px;
+                font-weight: 500;
+                
+            }
+
+            img {
+                
+                height: 8px;
+                width: 12px;
+                
+                right: 15px;
+                
+            }
+        }
+        
+        .Collapse_content {
+           
+            padding: 10px;
+            
+            
+        
+            li {
+                
+                margin-bottom: 10px;
+                font-size: 10px;
+                
+                
+            }
+            p {
+                
+                font-size: 10px;
+                
+            }
+        }
+
     }
-    .Collapse_title {
-        display: flex;
-        height: 30px;
+    }
     
-    }
 }

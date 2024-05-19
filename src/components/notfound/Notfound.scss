@@ -20,16 +20,33 @@
     font-weight: 700;
   }
 
-  &__Text {
-    display: flex;
-    height: 52px;
-    width: 872px;
+  // &__Text {
+  //   display: flex;
+  //   height: 52px;
+  //   width: 872px;
+  //   color: $primary-color;
+  //   justify-content: center;
+  //   font-weight: 500;
+  //   font-size: 36px;
+  //   font-family: $primary-font;
+  //   margin-top: 100px;
+   
+  // }
+  .error_Container__Text {
+    display: none; // Masquer les deux versions par défaut
     color: $primary-color;
-    justify-content: center;
     font-weight: 500;
     font-size: 36px;
     font-family: $primary-font;
     margin-top: 100px;
+  }
+
+  
+
+  .desktop-text {
+    @media (min-width: $small-screen) {
+      display: block; // Afficher la version desktop
+    }
   }
 
   &__Link {
@@ -46,7 +63,62 @@
 }
 
 
+@media (max-width: $small-screen) {
 
+  .error_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+  
+    &__Number {
+      
+      width: 335px;
+      height: 263px;
+      font-size: 96px;
+      
+      margin-top: 20px;
+      font-family: $primary-font;
+      font-weight: 700;
+    }
+    .mobile-text {
+      justify-content: center;
+        display: flex; // Afficher la version mobile
+        height: 52px;
+      width: 335px;
+      align-items: center;
+      padding: 0 15px;
+      font-size: 18px;
+      
+      margin-top: 100px;
+      }
+    // &__Text {
+      
+    //   height: 52px;
+    //   width: 335px;
+      
+    //   font-size: 18px;
+      
+    //   margin-top: 100px;
+    // }
+  
+    &__Link {
+      
+      width: 285px;
+      height: 26px;
+      font-size: 14px;
+      
+      font-weight: 500;
+      
+      margin-top: 100px;
+    }
+  }
+
+
+
+
+}
 
 
 

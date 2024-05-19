@@ -6,9 +6,17 @@ export default function Error() {
         <>
             <div className="error_Container">
                 <p className="error_Container__Number">404</p>
-                <p className="error_Container__Text">
+                {/* <p className="error_Container__Text">
                     Oups! La page que vous demandez n'existe pas.
-                </p>
+                    Oups! La page que <span className="mobile-only"><br /></span> vous demandez n'existe pas.
+                </p> */}
+                <p className="error_Container__Text mobile-text">
+  Oups! La page que <br /> vous demandez n'existe pas.
+</p>
+<p className="error_Container__Text desktop-text">
+  Oups! La page que vous demandez n'existe pas.
+</p>
+
                 <NavLink to="/" className="errorContainer__Link">
                     Retourner sur la page d'accueil
                 </NavLink>
