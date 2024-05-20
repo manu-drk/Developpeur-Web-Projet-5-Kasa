@@ -1,18 +1,18 @@
 @import '../../App.scss';
 
 $transition-speed: 0.3s;
-$transition-slow-speed: 30s;
+$transition-slow-speed: 1.3s;
 $rotate-angle: 180deg;
-// @keyframes slide-down {
-//     0% {
-//       opacity: 0;
-//       max-height: 0;
-//     }
-//     100% {
-//       opacity: 1;
-//       max-height: 1000px; 
-//     }
-//   }
+@keyframes slide-down {
+    0% {
+      opacity: 0;
+      max-height: 0;
+    }
+    100% {
+      opacity: 1;
+      max-height: 1000px; 
+    }
+  }
 
 
 //   translation
@@ -33,7 +33,6 @@ $rotate-angle: 180deg;
         border-radius: 5px;
         margin-bottom: 30px;
         width: 100%;
-        overflow: hidden;
         // width: 85%;
 
         &.open {
@@ -44,13 +43,8 @@ $rotate-angle: 180deg;
             .Collapse_content {
                 display: block;
                 opacity: 1;
-                // transition: $transition-slow-speed;
-                // transition: max-height $transition-slow-speed, transform $transition-speed, opacity $transition-speed;
-                transition: max-height 3s ease-in-out, padding 2s ease-in-out; /* Ajout de la transition ici */
-                // max-height: 1000px; 
-                max-height: 500px; 
-                transform: translateY(0);
-               
+                transition: $transition-slow-speed;
+                max-height: 1000px; 
             }
         }
 
@@ -62,7 +56,6 @@ $rotate-angle: 180deg;
             border-radius: 5px;
             align-items: center;
             position: relative;
-            // position: absolute;
 
             h2 {
                 color: $tertiary-color;
@@ -91,22 +84,11 @@ $rotate-angle: 180deg;
             opacity: 0;
             overflow: hidden; 
             background-color: $secondary-color;
-            // // transition: $transition-slow-speed;
-            // animation-name: slide-down;
-            //     /* Utilisez l'animation slide-down */
-            //     animation-duration: 1.5s;transform: translateY(-100%);
-            // transition: transform $transition-slow-speed ease, opacity $transition-slow-speed ease;
-            // 
-            transition: max-height 3s ease-in-out, padding 2s ease-in-out; /* Ajout de la transition ici */
-            background-color: $secondary-color;
+            // transition: $transition-slow-speed;
+            animation-name: slide-down;
+                /* Utilisez l'animation slide-down */
+                animation-duration: 1.5s;
             padding: 15px;
-            // position: absolute;
-            position: relative;
-            top: -100%;
-            // left: 0;
-            // right: 0;
-            z-index: 0;
-            
             
             ul {
                 list-style: none;
@@ -201,3 +183,207 @@ margin-bottom: 20px;
     }
     
 }
+
+// @import '../../App.scss';
+
+// $transition-speed: 0.3s;
+// $transition-slow-speed: 30s;
+// $rotate-angle: 180deg;
+// @keyframes slide-down {
+//     0% {
+//       opacity: 0;
+//       max-height: 0;
+//     }
+//     100% {
+//       opacity: 1;
+//       max-height: 1000px; 
+//     }
+//   }
+
+
+// //   translation
+// //   overflowhidden
+
+
+// .Collapse-container {
+//     display: flex;
+//     flex-direction: column;
+//     border-radius: 5px;
+//     align-items: center;
+//     width: 100%;
+
+//     .Collapse {
+//         display: flex;
+//         flex-direction: column;
+//         // width: 1023px;
+//         border-radius: 5px;
+//         margin-bottom: 30px;
+//         width: 100%;
+//         overflow: hidden;
+//         // width: 85%;
+
+//         &.open {
+//             .Collapse_title img {
+//                 transform: rotate($rotate-angle);
+//             }
+
+//             .Collapse_content {
+//                 display: block;
+//                 opacity: 1;
+//                 transition: $transition-slow-speed;
+//                 // // transition: max-height $transition-slow-speed, transform $transition-speed, opacity $transition-speed;
+//                 // transition: max-height 3s ease-in-out, padding 2s ease-in-out; /* Ajout de la transition ici */
+//                 // max-height: 1000px; 
+//                 max-height: 500px; 
+//                 transform: translateY(0);
+               
+//             }
+//         }
+
+//         .Collapse_title {
+//             display: flex;
+//             height: 52px;
+//             background-color: $primary-color;
+//             padding: 0 20px 0 15px;
+//             border-radius: 5px;
+//             align-items: center;
+//             position: relative;
+//             // position: absolute;
+
+//             h2 {
+//                 color: $tertiary-color;
+//                 font-size: 24px;
+//                 font-weight: 500;
+//                 font-family: $primary-font;
+//             }
+
+//             img {
+//                 cursor: pointer;
+//                 position: absolute;
+//                 height: 10px;
+//                 width: 15px;
+//                 color: $tertiary-color;
+//                 right: 15px;
+//                 transition: transform $transition-speed ease;
+//             }
+
+//             &:hover {
+//                 cursor: pointer;
+//             }
+//         }
+
+//         .Collapse_content {
+//             display: none;
+//             opacity: 0;
+//             overflow: hidden; 
+//             background-color: $secondary-color;
+//             // transition: $transition-slow-speed;
+//             animation-name: slide-down;
+//                 /* Utilisez l'animation slide-down */
+//                 animation-duration: 1.5s;transform: translateY(-100%);
+//             // // transition: transform $transition-slow-speed ease, opacity $transition-slow-speed ease;
+//             // // 
+//             // transition: max-height 3s ease-in-out, padding 2s ease-in-out; /* Ajout de la transition ici */
+//             background-color: $secondary-color;
+//             padding: 15px;
+//             // position: absolute;
+//             position: relative;
+//             top: -100%;
+//             // left: 0;
+//             // right: 0;
+//             z-index: 0;
+            
+            
+//             ul {
+//                 list-style: none;
+//                 padding: 0;
+//             }
+        
+//             li {
+//                 display: flex;
+//                 flex-direction: column;
+//                 margin-bottom: 10px;
+//                 font-size: 18px;
+//                 font-weight: 400;
+//                 font-family: $primary-font;
+                
+//             }
+//             p {
+//                 color: $footer-color;
+//                 font-size: 18px;
+//                 font-weight: 400;
+//                 // margin-left: 15px;
+//                 // margin-right: 15px;
+                
+//                 font-family: $primary-font;
+//             }
+
+            
+//     }
+// }}
+
+
+// @media (max-width: $medium-screen) {
+//     .Collapse-container {
+//         width: $med1-width;
+
+//     }
+    
+// }
+
+// @media (max-width: $small-screen) {
+//     .Collapse-container {
+//         width: 335px;
+//         flex-direction: column;
+//         align-items: center;
+//         margin: 0 auto;
+
+//         .Collapse {
+// margin-bottom: 20px;
+
+//         .Collapse_title {
+//             display: flex;
+//             height: 30px;
+//             padding: 0 10px;
+        
+//             h2 {
+                
+//                 font-size: 16px;
+//                 font-weight: 500;
+                
+//             }
+
+//             img {
+                
+//                 height: 8px;
+//                 width: 12px;
+                
+//                 right: 15px;
+                
+//             }
+//         }
+        
+//         .Collapse_content {
+           
+//             padding: 10px;
+            
+            
+        
+//             li {
+                
+//                 margin-bottom: 10px;
+//                 font-size: 10px;
+                
+                
+//             }
+//             p {
+                
+//                 font-size: 10px;
+                
+//             }
+//         }
+
+//     }
+//     }
+    
+// }
