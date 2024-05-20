@@ -5,8 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 800px;
-
+  height: 700px;
   &__Number {
     display: flex;
     align-items: center;
@@ -15,40 +14,36 @@
     font-size: 288px;
     color: $primary-color;
     justify-content: center;
-    margin-top: 20px;
+    margin: 60px auto;
     font-family: $primary-font;
     font-weight: 700;
   }
-
-  // &__Text {
-  //   display: flex;
-  //   height: 52px;
-  //   width: 872px;
-  //   color: $primary-color;
-  //   justify-content: center;
-  //   font-weight: 500;
-  //   font-size: 36px;
-  //   font-family: $primary-font;
-  //   margin-top: 100px;
-   
-  // }
-  .error_Container__Text {
-    display: none; // Masquer les deux versions par défaut
+  &__text_content {
+    display: flex;
+    height: 52px;
+    width: 872px;
+    gap: 10px;
+    justify-content: center;
+    margin: 40px auto;
+  }
+  &__Text1 {
+    display: flex;
     color: $primary-color;
+    justify-content: center;
     font-weight: 500;
     font-size: 36px;
     font-family: $primary-font;
-    margin-top: 100px;
+   
   }
-
-  
-
-  .desktop-text {
-    @media (min-width: $small-screen) {
-      display: block; // Afficher la version desktop
-    }
+  &__Text2 {
+    display: flex;
+    color: $primary-color;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 36px;
+    font-family: $primary-font;
+    
   }
-
   &__Link {
     display: flex;
     justify-content: center;
@@ -58,7 +53,7 @@
     font-family: $primary-font;
     font-weight: 500;
     color: $footer-color;
-    margin-top: 100px;
+    margin: 50px auto;
   }
 }
 
@@ -71,61 +66,37 @@
     align-items: center;
     justify-content: center;
     height: 450px;
-  
     &__Number {
-      
       width: 335px;
-      height: 263px;
+      height: 200px;
       font-size: 96px;
-      
-      margin-top: 20px;
+      margin: 20px auto;
       font-family: $primary-font;
       font-weight: 700;
-    }
-    .mobile-text {
-      justify-content: center;
-        display: flex; // Afficher la version mobile
-        height: 52px;
-      width: 335px;
-      align-items: center;
-      padding: 0 15px;
-      font-size: 18px;
-      
-      margin-top: 100px;
       }
-    // &__Text {
-      
-    //   height: 52px;
-    //   width: 335px;
-      
-    //   font-size: 18px;
-      
-    //   margin-top: 100px;
-    // }
-  
+    &__text_content {
+      display: flex;
+      flex-direction: column;
+      height: 52px;
+      width: 335px; 
+    }
+    &__Text1 {
+      display: flex;
+      font-size: 18px;
+      margin: -5px auto;
+    }
+    &__Text2 {
+      display: flex;
+      font-size: 18px;
+      margin: -5px auto;
+    }
     &__Link {
-      
+      display: flex;
       width: 285px;
       height: 26px;
       font-size: 14px;
-      
       font-weight: 500;
-      
-      margin-top: 100px;
+      margin: 50px auto;
     }
   }
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-

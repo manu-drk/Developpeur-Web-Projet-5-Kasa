@@ -60,21 +60,22 @@
 
 @media (max-width: $small-screen) {
     .header {
-        width: $min-width;
+        display: flex;
+        width: 335px;
         margin: 10px auto;
 
         &-logo {
-            width: $header-logo-min-width;
+            width: 140px;
             height: $header-logo-min-height;
         }
         &__fig {
-            margin-left: 17px;
-            width: $header-logo-min-width;
+            // margin-left: 17px;
+            width: 140px;
         }
 
         .nav-header {
             width: $min3-width;
-            justify-content: center;
+            // justify-content: center;
 
             a {
                 margin-left: $nav-link-margin-small;
