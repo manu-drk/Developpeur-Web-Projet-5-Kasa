@@ -15,7 +15,7 @@
 
     @media (max-width: $medium-screen) {
         .home_gallery {
-            width: $med-width;
+            width: 100%;
             grid-template-columns: repeat(2, 1fr);
         }
     }

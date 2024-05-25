@@ -42,7 +42,8 @@
 
 @media (max-width: $medium-screen) {
     .header {
-        width: $med1-width;
+        width: 100%;
+        padding: 0 5%;
 
         &-logo {
             width: $header-logo-min-width;
@@ -61,20 +62,21 @@
 @media (max-width: $small-screen) {
     .header {
         display: flex;
-        width: 335px;
+        width: 100%;
         margin: 10px auto;
+        padding: 0 5%;
 
         &-logo {
-            width: 140px;
+            width: 130px;
             height: $header-logo-min-height;
         }
         &__fig {
             // margin-left: 17px;
-            width: 140px;
+            width: 45%;
         }
 
         .nav-header {
-            width: $min3-width;
+            width: 55%;
             // justify-content: center;
 
             a {
