@@ -51,7 +51,12 @@
         }
 
         .nav-header {
-            width: $min-width;
+            width: 55%;
+            margin-left: 10px;
+            a {
+                margin-left: 10px;
+                font-size: 20px;
+            }
         }
     }
 
@@ -80,7 +85,7 @@
             // justify-content: center;
 
             a {
-                margin-left: $nav-link-margin-small;
+                margin-left: 10px;
                 font-size: $nav-link-font-small-size;
             }
         }

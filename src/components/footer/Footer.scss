@@ -34,7 +34,13 @@
 @media (max-width: $medium-screen) {
     .footer {
         width: 100%;
+        .copy {
         
+            width: 65%;
+            font-size: 18px;
+            align-items: center;
+            
+        } 
     }
 }
 @media (max-width: $small-screen) {
@@ -42,7 +48,7 @@
         width: 100%;
         .copy {
         
-            width: 133px;
+            width: 38%;
             font-size: $nav-link-font-small-size;
             align-items: center;
             
