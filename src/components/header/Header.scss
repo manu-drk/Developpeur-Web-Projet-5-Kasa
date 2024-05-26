@@ -4,7 +4,8 @@
 
 .header {
     display: flex;
-    width: $header-width;
+    width: 90%;
+    max-width: 1378px;
     height: $header-height;
     justify-content: space-between;
     align-items: center;
@@ -42,8 +43,8 @@
 
 @media (max-width: $medium-screen) {
     .header {
-        width: 100%;
-        padding: 0 5%;
+        width: 90%;
+
 
         &-logo {
             width: $header-logo-min-width;
@@ -54,6 +55,7 @@
             width: 55%;
             margin-left: 10px;
             margin: 0;
+
             a {
                 margin-left: 10px;
                 font-size: 20px;
@@ -65,17 +67,32 @@
 
 }
 
+
+@media (max-width: 450px) {
+    .header .nav-header {
+        width: 40%;
+        margin-left: 10px;
+        margin: 0;
+    }
+
+    .header .nav-header a {
+        margin-left: 5px;
+        font-size: 15px;
+    }
+}
+
 @media (max-width: $small-screen) {
     .header {
         display: flex;
-        width: 100%;
+        width: 90%;
         margin: 10px auto;
-        padding: 0 5%;
+
 
         &-logo {
             width: 130px;
             height: $header-logo-min-height;
         }
+
         &__fig {
             // margin-left: 17px;
             width: 45%;
@@ -96,43 +113,3 @@
 
 
 }
-
-// @import '../../App.scss';
-
-// .header {
-//     display: flex;
-//     width: 1240px;
-//     height: 70px;
-//     justify-content: space-between;
-//     align-items: center;
-//     margin: 40px auto;
-
-//     &-logo {
-//         width: 210px;
-//         height: 68px;
-//     }
-
-//     &__fig {
-//         margin-left: 0;
-//         width: 210px;
-//     }
-
-//     .nav-header {
-//         display: flex;
-//         justify-content: flex-end;
-//         margin: auto;
-//         width: 1240px;
-
-//         a {
-//             margin-left: 40px;
-//             text-transform: none;
-//             text-decoration: none;
-//             color: $footer-color;
-//             font-size: 24px;
-
-//             &:hover {
-//                 text-decoration: underline;
-//             }
-//         }
-//     }
-// }
