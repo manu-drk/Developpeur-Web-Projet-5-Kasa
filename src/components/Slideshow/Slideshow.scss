@@ -4,9 +4,10 @@
     display: flex;
     position: relative;
     align-items: center;
-    height: 415px;
+    height: 600px;
     width: 1240px;
     border-radius: 25px;
+    margin: 0 auto;
 
     .carouselImage {
         width: 100%;
@@ -45,14 +46,17 @@
 
 @media (max-width: $medium-screen) {
     .carousel {
-        width: $med1-width;
+        width: 90%;
+        margin: 10px auto;
+        height: 450px;
+        
 
     }
 }
 
 @media (max-width: $small-screen) {
     .carousel {
-        width: 335px;
+        width: 95%;
         height: 255px;
         margin: 10px auto;
 

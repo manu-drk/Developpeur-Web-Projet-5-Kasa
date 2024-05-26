@@ -41,8 +41,8 @@
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: black;
+    // -webkit-text-stroke-width: 0.5px;
+    // -webkit-text-stroke-color: black;
     text-shadow: rgba(0, 0, 0, 0.30) 0px 3px 4px;
     
 
@@ -54,7 +54,8 @@
         margin: 20px auto; 
     }
     .banner-txt{
-        width: 225px;
+        width: 100%;
+        font-size: 37px;
         
     }
 }
@@ -67,7 +68,7 @@
         
     }
     .banner-txt{
-        width: 225px;
+        width: 100%;
         font-size: 24px;
         
     }

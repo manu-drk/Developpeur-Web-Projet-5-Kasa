@@ -30,17 +30,20 @@
 }
 
 .logement-title {
-    font-size: 36px;
-    color: $primary-color;
-    // margin: 15px 0;
     width: fit-content;
     margin-bottom: 15px;
+    font-size: 36px;
+    font-family: 'montserrat';
+    color: $primary-color;
+    // margin: 15px 0;
+    
 }
 
 .logement-location {
     height: 26px;
     font-size: 18px;
-    font-family: $primary-font;
+    font-weight: 500;
+    font-family: 'Montserrat';
     margin-bottom: 15px;
 }
 
@@ -52,15 +55,19 @@
 
 .logement-tag {
     display: flex;
-    height: 25px;
-    padding: 15px;
-    background-color: $primary-color;
-    color: white;
-    font-size: 18px;
-    border-radius: 10px;
     justify-content: center;
     align-items: center;
+    height: 25px;
+    padding: 15px 20px;
+    background-color: $primary-color;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
     font-family: $primary-font;
+    color: white;
+    
+   
+    
 }
 
 .host_rating_container {
@@ -136,24 +143,34 @@
 
 @media (max-width: $medium-screen) {
 
-    //  {
-    //     width: $med1-width;
-    // }
+    .logementsCarrousel {
+
+        width: 100%;
+        // height: 400px;
+        margin-bottom: 15px;
+    }
+
+    .section_2_logements {
+        width: 90%;
+    }
     .Collapse-logements {
-        width: $med1-width;
+        
+        width: 90%;
+        gap: 40px;
     }
 }
 
 @media (max-width: $small-screen) {
     .logementsCarrousel {
 
-        width: 335px;
-        height: 255px;
-        margin-bottom: 15px;
+        width: 90%;
+        // height: 255px;
+        // margin-bottom: 15px;
+        overflow: hidden;
     }
 
     .section_2_logements {
-        width: 335px;
+        width: 90%;
     }
 
     .logement_info_container_wrapper {
