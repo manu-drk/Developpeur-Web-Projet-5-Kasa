@@ -6,7 +6,7 @@ import './Gallery.scss'
 
 const Gallery = () => {
     return (
-        <div className="home_gallery">
+        <div className="home__gallery">
             {logements.map((logement) => {
                 return (
                     <article className="art" key={logement.id}>

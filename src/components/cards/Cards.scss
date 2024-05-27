@@ -2,25 +2,25 @@
 
 .cards {
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: $content-large-width;
+    height: $content-large-width;
     position: relative;
-    border-radius: 10px;
+    border-radius: $radius2;
     overflow: hidden;
 
 
-    &_img {
-        width: 100%;
-        height: 100%;
+    &__img {
+        width: $content-large-width;
+        height: $content-large-width;
         object-fit: cover;
-        min-width: 100%;
-        min-height: 100%;
+        min-width: $content-large-width;
+        min-height: $content-large-width;
     }
 
-    &_title {
+    &__title {
         color: $tertiary-color;
         position: absolute;
-        font-size: 1.2em;
+        font-size: $title3;
         bottom: 0;
         margin: 15px 20px;
     }
@@ -29,14 +29,14 @@
 @media (max-width: $medium-screen) {
     .cards {
         display: flex;
-        width: 100%;
-        height: 100%;
+        width: $content-large-width;
+        height: $content-large-width;
 
         position: relative;
-        border-radius: 10px;
+        border-radius: $radius2;
         overflow: hidden;
         &_title {
-            font-size: 1em;
+            font-size: $title6;
             margin: 10px;
         }
     }
@@ -45,28 +45,28 @@
 @media (max-width: $small-screen) {
     .cards {
         display: flex;
-        width: 100%;
-        height: 100%;
+        width: $content-large-width;
+        height: $content-large-width;
 
         position: relative;
-        border-radius: 10px;
+        border-radius: $radius2;
         overflow: hidden;
 
 
-        &_img {
-            width: 100%;
-            height: 100%;
+        &__img {
+            width: $content-large-width;
+            height: $content-large-width;
             object-fit: cover;
-            min-width: 100%;
-            min-height: 100%;
+            min-width: $content-large-width;
+            min-height: $content-large-width;
         }
 
-        &_title {
+        &__title {
             color: $tertiary-color;
             position: absolute;
-            font-size: 1.2em;
+            font-size: $title3;
             bottom: 0;
-            margin: 15px 20px;
+            margin: 10px 10px;
         }
     }
 }

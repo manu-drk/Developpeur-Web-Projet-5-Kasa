@@ -3,44 +3,44 @@
 .banner {
     display: flex;
     position: relative;    
-    border-radius: 25px;
+    border-radius: $radius5;
     height: 223px;
-    max-width: 1378px;
-    width: 90%;
+    max-width: $pages-width;
+    width: $content-medium-width;
     margin: 40px auto;
     box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 6px
 }
 
-.banner-img {
-    border-radius: 25px;
-    height: 100%;
+.banner__img {
+    border-radius: $radius5;
+    height: $content-large-width;
     object-fit: cover;
-    width: 100%;
+    width: $content-large-width;
 
 }
 
-.banner-filtre {
+.banner__filtre {
     display: flex;
     position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 25px;
+    height: $content-large-width;
+    width: $content-large-width;
+    border-radius: $radius5;
     background-color: rgba(0, 0, 0, 0.500);
 }
 
-.banner-txt {
+.banner__txt {
     display: flex;
     position: absolute;
     color: white;
     font-family: Montserrat;
-    font-size: 49px;
-    font-weight: 700;
+    font-size: $title0;
+    font-weight: $weight1;
     text-align: center;
     justify-content: center;
     transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-
+    top: $content-medsmall-width;
+    left: $content-medsmall-width;
+width: $content-large-width;
     text-shadow: rgba(0, 0, 0, 0.30) 0px 3px 4px;
 
 
@@ -48,28 +48,32 @@
 
 @media (max-width: $medium-screen) {
     .banner {
-        width: 90%;
+        width: $content-medium-width;
         margin: 20px auto;
     }
 
-    .banner-txt {
-        width: 100%;
-        font-size: 37px;
+    .banner__txt {
+        width: $content-large-width;
+        font-size: $title1;
 
     }
 }
 
 @media (max-width: $small-screen) {
     .banner {
-        width: 90%;
+        width: $content-medium-width;
         height: 111px;
         margin: 20px auto;
 
     }
 
-    .banner-txt {
-        width: 100%;
-        font-size: 24px;
+    .banner__txt {
+        display: flex;
+        width: $content-large-width;
+        font-size: $title2;
+        text-align: left;
+        padding-left: 5%;
+        padding-right: 20%;
 
     }
 }

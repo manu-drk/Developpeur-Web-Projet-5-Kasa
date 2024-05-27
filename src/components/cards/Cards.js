@@ -4,10 +4,10 @@ import './Cards.scss'
 function Cards({ image, title }) {
     return (
         <div className="cards">
-            <img src={image} alt={title} className="cards_img" />
+            <img src={image} alt={title} className="cards__img" />
             
 
-            <h2 className="cards_title">{title}</h2>
+            <h2 className="cards__title">{title}</h2>
         </div>
     );
 }

@@ -3,16 +3,16 @@
 .logement_body {
     display: flex;
     justify-content: center;
-    max-width: 1378px;
-    width: 100%;
-    margin: 0 auto;
+    max-width: $pages-width;
+    width: $content-large-width;
+    margin: $margin-base;
     flex-direction: column;
     align-items: center;
 }
 
 .logementsCarrousel {
-    margin: 0 auto;
-    width: 90%;
+    margin: $margin-base;
+    width: $content-medium-width;
     // max-width: 1240px;
 }
 
@@ -20,15 +20,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
+    width: $content-medium-width;
     // max-width: 1240px;
-    margin: 0 auto;
+    margin: $margin-base;
 }
 
 .logement_info_container_wrapper {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: $content-large-width;
     margin: 20px 0px;
 }
 
@@ -120,22 +120,22 @@
 }
 
 .Collapse-logements {
-    margin: 0 auto;
+    margin: $margin-base;
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: $content-medium-width;
     gap: 5%;
 }
 
 
 
 .Collapse_title {
-    width: 100%;
+    width: $content-large-width;
 }
 
 .Collapse-description,
 .Collapse-equipement {
-    width: 100%;
+    width: $content-large-width;
     margin-bottom: 20px;
     overflow: hidden;
     background-color: $secondary-color;
@@ -152,18 +152,18 @@
 
     .logementsCarrousel {
 
-        width: 100%;
+        width: $content-large-width;
         // height: 400px;
         margin-bottom: 15px;
     }
 
     .section_2_logements {
-        width: 90%;
+        width: $content-medium-width;
     }
 
     .Collapse-logements {
 
-        width: 90%;
+        width: $content-medium-width;
         gap: 5%;
     }
 
@@ -186,7 +186,7 @@
 
     .logement-location {
         height: 20px;
-        font-size: 16px;
+        font-size: $title6;
 
     }
 }
@@ -201,7 +201,7 @@
 
     .logements_info_container {
 
-        width: 100%;
+        width: $content-large-width;
         margin: 10px auto;
 
 
@@ -211,14 +211,14 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        width: 100%;
+        width: $content-large-width;
         height: 45px;
         margin-bottom: 10px;
     }
 
     .Collapse-logements {
         flex-direction: column;
-        width: 95%;
+        width: $content-medlarge-width;
         gap: 4%;
 
     }
@@ -229,13 +229,13 @@
 @media (max-width: $small-screen) {
     .logementsCarrousel {
 
-        width: 90%;
+        width: $content-medium-width;
 
         overflow: hidden;
     }
 
     .section_2_logements {
-        width: 90%;
+        width: $content-medium-width;
     }
 
     .logement_info_container_wrapper {
@@ -246,7 +246,7 @@
 
     .logements_info_container {
 
-        width: 100%;
+        width: $content-large-width;
         margin: 10px auto;
 
 
@@ -260,7 +260,7 @@
 
     .logement-location {
         height: 26px;
-        font-size: 14px;
+        font-size: $title7;
         font-family: $primary-font;
         margin-bottom: 15px;
     }
@@ -268,7 +268,7 @@
     .logement-tag {
         height: 18px;
         padding: 0px 7px;
-        font-size: 10px;
+        font-size: $title5;
 
     }
 
@@ -276,7 +276,7 @@
         display: flex;        
         flex-direction: row-reverse;
         justify-content: space-between;
-        width: 100%;
+        width: $content-large-width;
         height: 45px;
     }
 
@@ -299,7 +299,7 @@
 
     .Collapse-logements {
         flex-direction: column;
-        width: 95%;
+        width: $content-medlarge-width;
         gap: 4%;
 
     }

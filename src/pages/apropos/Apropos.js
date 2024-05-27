@@ -47,7 +47,7 @@ function Apropos() {
                 <Header />
                 <Banner texte="" image={imgAproposBanner} />
                 
-                <div className="Collapse-container">{CollapsesListe}</div>
+                <div className="Collapse__container">{CollapsesListe}</div>
                 <Footer />
             
         </div>

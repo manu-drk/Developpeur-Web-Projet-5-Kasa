@@ -4,7 +4,7 @@
 
 .header {
     display: flex;
-    width: 90%;
+    width: $content-medium-width;
     max-width: 1378px;
     height: $header-height;
     justify-content: space-between;
@@ -43,7 +43,7 @@
 
 @media (max-width: $medium-screen) {
     .header {
-        width: 90%;
+        width: $content-medium-width;
 
 
         &-logo {
@@ -84,7 +84,7 @@
 @media (max-width: $small-screen) {
     .header {
         display: flex;
-        width: 90%;
+        width: $content-medium-width;
         margin: 10px auto;
 
 

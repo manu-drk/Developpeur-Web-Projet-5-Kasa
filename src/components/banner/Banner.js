@@ -4,9 +4,9 @@ import './Banner.scss'
 function Banniere({ image, texte }) {
     return (
         <div className="banner">
-            <img className="banner-img" src={image} alt="Bannière" />
-            <div className="banner-filtre"></div> 
-            <span className="banner-txt">{texte}</span>
+            <img className="banner__img" src={image} alt="Bannière" />
+            <div className="banner__filtre"></div> 
+            <span className="banner__txt">{texte}</span>
         </div>
     );
 }

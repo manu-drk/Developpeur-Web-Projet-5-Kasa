@@ -11,16 +11,16 @@ function Collapse({ title, content }) {
     };
 
     return (
-        <div className='Collapse-container'>
+        <div className='Collapse__container'>
         <div className={`Collapse ${open ? "open" : ""}`}>
-            <div className='Collapse_title' onClick={handleToggle}>
+            <div className='Collapse__title' onClick={handleToggle}>
                 <h2>{title}</h2>
-                <img src={flechUp} alt={open ? "Up" : "Down"} className={open ? "Collapse_title_img rotate" : "Collapse_title_img"} />
+                <img src={flechUp} alt={open ? "Up" : "Down"} className={open ? "Collapse__title_img rotate" : "Collapse__title_img"} />
             </div>
-            {/* <div className='Collapse_content'>
+            {/* <div className='Collapse__content'>
             {open && <p>{content}</p>}</div>
         </div> */}
-        <div className='Collapse_content'>
+        <div className='Collapse__content'>
                     {open && (
                         Array.isArray(content) ? (
                             <ul>
@@ -62,8 +62,8 @@ export default Collapse;
 //     }
 //     return (
 //         <div className={`Collapse ${open && "open"}`}>
-//             <div className='Collapse_title' onClick={handleToggle}>{title} <i className="fa-solid fa-chevron-down"></i></div>
-//             <div className='Collapse_content'>{content}</div>
+//             <div className='Collapse__title' onClick={handleToggle}>{title} <i className="fa-solid fa-chevron-down"></i></div>
+//             <div className='Collapse__content'>{content}</div>
 //         </div>
 //     )
 // }
