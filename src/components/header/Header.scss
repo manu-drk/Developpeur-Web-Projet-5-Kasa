@@ -5,7 +5,7 @@
 .header {
     display: flex;
     width: $content-medium-width;
-    max-width: 1378px;
+    max-width: $pages-width;
     height: $header-height;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +17,7 @@
     }
 
     &__fig {
-        margin-left: 0;
+        margin-left: $size0;
         width: $header-logo-width;
     }
 
@@ -52,13 +52,13 @@
         }
 
         .nav-header {
-            width: 55%;
-            margin-left: 10px;
-            margin: 0;
+            width: $content-medsmall1-width;
+            margin-left: $size1;
+            margin: $size0;
 
             a {
-                margin-left: 10px;
-                font-size: 20px;
+                margin-left: $size1;
+                font-size: $title8;
             }
         }
     }
@@ -70,14 +70,14 @@
 
 @media (max-width: 450px) {
     .header .nav-header {
-        width: 40%;
-        margin-left: 10px;
-        margin: 0;
+        width: $content-small0-width;
+        margin-left: $size1;
+        margin: $size0;
     }
 
     .header .nav-header a {
-        margin-left: 5px;
-        font-size: 15px;
+        margin-left: $size05;
+        font-size: $title7;
     }
 }
 
@@ -85,7 +85,7 @@
     .header {
         display: flex;
         width: $content-medium-width;
-        margin: 10px auto;
+        margin: $size1 auto;
 
 
         &-logo {
@@ -94,16 +94,16 @@
         }
 
         &__fig {
-            // margin-left: 17px;
-            width: 45%;
+            
+            width: $content-small1-width;
         }
 
         .nav-header {
-            width: 55%;
-            // justify-content: center;
+            width: $content-medsmall1-width;
+            
 
             a {
-                margin-left: 10px;
+                margin-left: $size1;
                 font-size: $nav-link-font-small-size;
             }
         }

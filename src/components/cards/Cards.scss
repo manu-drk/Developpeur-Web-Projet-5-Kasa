@@ -21,8 +21,8 @@
         color: $tertiary-color;
         position: absolute;
         font-size: $title3;
-        bottom: 0;
-        margin: 15px 20px;
+        bottom: $size0;
+        margin: $size15 $size2;
     }
 }
 
@@ -37,7 +37,7 @@
         overflow: hidden;
         &_title {
             font-size: $title6;
-            margin: 10px;
+            margin: $size1;
         }
     }
 }
@@ -65,8 +65,8 @@
             color: $tertiary-color;
             position: absolute;
             font-size: $title3;
-            bottom: 0;
-            margin: 10px 10px;
+            bottom: $size0;
+            margin: $size1 $size1;
         }
     }
 }

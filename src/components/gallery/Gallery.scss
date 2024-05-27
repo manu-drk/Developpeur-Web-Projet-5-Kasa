@@ -1,35 +1,35 @@
 @import '../../App.scss';
 
 .home__gallery {
-    max-width: 1378px;
-    width: 90%;
+    max-width: $pages-width;
+    width: $content-medium-width;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    // justify-items: center;
-    padding: 40px;
-    margin: 40px auto;    
+    gap: $size4;
+    padding: $size4;
+    margin: $size4 auto;
     background-color: $secondary-color;
-    border-radius: 25px;
-    
+    border-radius: $radius5;
+
+}
+
+@media (max-width: $medium-screen) {
+    .home__gallery {
+        width: $content-medium-width;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $size2;
+        padding: $size2;
+    }
+}
+
+@media (max-width: $small-screen) {
+    .home__gallery {
+        width: $content-medium-width;
+        grid-template-columns: repeat(1, 1fr);
+        background-color: $tertiary-color;
+        gap: $size2;
+        margin: $size2 auto;
+        padding: $size0;
     }
 
-    @media (max-width: $medium-screen) {
-        .home__gallery {
-            width: 90%;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            padding: 20px;
-        }
-    }
-    @media (max-width: $small-screen) {
-        .home__gallery {
-            width: 90%;
-            grid-template-columns: repeat(1, 1fr);
-            background-color: $tertiary-color;
-            gap: 20px;
-            margin: 20px auto; 
-    padding: 0px;
-        }
-        
-    }
+}

@@ -30,11 +30,11 @@ $rotate-angle: 180deg;
     .Collapse {
         display: flex;
         flex-direction: column;
-        
+
         border-radius: $radius1;
-        margin-bottom: 30px;
+        margin-bottom: $size3;
         width: $content-large-width;
-        
+
 
         &.open {
             .Collapse__title img {
@@ -54,25 +54,25 @@ $rotate-angle: 180deg;
             height: 52px;
             width: $content-large-width;
             background-color: $primary-color;
-            padding: 0 20px 0 15px;
-            border-radius: 5px;
+            padding: $size0 $size2 $size0 $size15;
+            border-radius: $radius1;
             align-items: center;
             position: relative;
 
             h2 {
                 color: $tertiary-color;
-                font-size: 24px;
-                font-weight: 700;
+                font-size: $title2;
+                font-weight: $weight1;
                 font-family: $primary-font;
             }
 
             img {
                 cursor: pointer;
                 position: absolute;
-                height: 10px;
-                width: 15px;
+                height: $size1;
+                width: $size15;
                 color: $tertiary-color;
-                right: 15px;
+                right: $size15;
                 transition: transform $transition-speed ease;
             }
 
@@ -90,11 +90,11 @@ $rotate-angle: 180deg;
             // animation-name: slide-down;
             //     /* Utilisez l'animation slide-down */
             //     animation-duration: 1.5s;
-            padding: 15px;
+            padding: $size15;
 
             ul {
                 list-style: none;
-                padding: 0;
+                padding: $size0;
                 animation-name: slide-down;
                 /* Utilisez l'animation slide-down */
                 animation-duration: 1.5s;
@@ -103,26 +103,21 @@ $rotate-angle: 180deg;
             li {
                 display: flex;
                 flex-direction: column;
-                margin-bottom: 10px;
+                margin-bottom: $size1;
                 font-size: $title3;
                 font-weight: $weight3;
                 font-family: $primary-font;
 
-
             }
-
             p {
                 color: $footer-color;
                 font-size: $title3;
                 font-weight: $weight3;
-                
                 animation-name: slide-down;
                 /* Utilisez l'animation slide-down */
                 animation-duration: 1.5s;
                 font-family: $primary-font;
             }
-
-
         }
     }
 }
@@ -131,20 +126,15 @@ $rotate-angle: 180deg;
 @media (max-width: $medium-screen) {
     .Collapse__container {
         width: $content-medium-width;
-
         .Collapse__title {
             display: flex;
-            height: 30px;
-            padding: 0 10px;
-
+            height: $size3;
+            padding: $size0 $size1;
             h2 {
-
                 font-size: 20px;
                 font-weight: $weight2;
-
             }
         }
-
     }
 
 }
@@ -159,14 +149,11 @@ $rotate-angle: 180deg;
 
     .Collapse__title {
         display: flex;
-        height: 45px;
-        padding: 0 10px;
-
+        height: $size45;
+        padding: $size0 $size1;
         h2 {
-
-            font-size: 20px;
+            font-size: $title8;
             font-weight: $weight2;
-
         }
     }
 }
@@ -176,55 +163,33 @@ $rotate-angle: 180deg;
         width: $content-medlarge-width;
         flex-direction: column;
         align-items: center;
-        margin: 0 auto;
-
+        margin: $size0 auto;
         .Collapse {
-            margin-bottom: 20px;
-
+            margin-bottom: $size2;
             .Collapse__title {
                 display: flex;
-                height: 30px;
-                padding: 0 10px;
-
+                height: $size3;
+                padding: $size0 $size1;
                 h2 {
-
                     font-size: $title4;
                     font-weight: $weight2;
-
                 }
-
                 img {
-
                     height: 8px;
                     width: 12px;
-
-                    right: 15px;
-
+                    right: $size15;
                 }
             }
-
             .Collapse__content {
-
-                padding: 10px;
-
-
-
+                padding: $size1;
                 li {
-
-                    margin-bottom: 10px;
+                    margin-bottom: $size1;
                     font-size: $title5;
-
-
                 }
-
                 p {
-
                     font-size: $title5;
-
                 }
             }
-
         }
     }
-
 }
