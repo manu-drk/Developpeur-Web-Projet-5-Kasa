@@ -7,9 +7,9 @@ export default function Error() {
             <div className="error_Container">
                 <p className="error_Container__Number">404</p>
                 <div className="error_Container__text_content">
-                    <p className="error_Container__Text">
+                    <span className="error_Container__Text">
                         Oups! La page que vous demandez n'existe pas.
-                    </p>
+                    </span>
                 </div>
 
 

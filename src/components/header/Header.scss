@@ -89,8 +89,9 @@
 
 
         &-logo {
-            width: 130px;
-            height: $header-logo-min-height;
+            width: $content-large-width;
+            min-width: $content-smalllarge-width;
+            
         }
 
         &__fig {

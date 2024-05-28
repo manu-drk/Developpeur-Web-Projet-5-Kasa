@@ -1,83 +1,171 @@
 @import '../../App.scss';
 
+@mixin carousel-navigation {
+    display: flex;
+    position: absolute;
+    top: $content-medsmall-width;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+@mixin carousel-dimensions($width, $height, $margin) {
+    width: $width;
+    height: $height;
+    margin: $margin;
+}
+
 .carousel {
     display: flex;
     position: relative;
     align-items: center;
-    height: 600px;
-    width: 100%;
-    border-radius: 25px;
-    margin: 0 auto;
+    @include carousel-dimensions($content-large-width, $small3-screen, $margin-base);
+    border-radius: $radius5;
 
     .carouselImage {
-        width: 100%;
-        height: 100%;
+        @include carousel-dimensions($content-large-width, $content-large-width, 0);
         object-fit: cover;
-        border-radius: 25px;
+        border-radius: $radius5;
     }
 
     .counter {
         display: flex;
         position: absolute;
         color: $tertiary-color;
-        top: 85%;
-        left: 50%;
-        font-size: 25px;
+        top: $content-medium-width;
+        left: $content-medsmall-width;
+        font-size: $size25;
         font-family: $primary-font;
     }
 
-    .carouselPrev,
+    .carouselPrev {
+        @include carousel-navigation;
+        left: $size15;
+    }
+
     .carouselNext {
-        display: flex;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        cursor: pointer;
-
-        &.carouselPrev {
-            left: 15px;
-        }
-
-        &.carouselNext {
-            right: 15px;
-        }
+        @include carousel-navigation;
+        right: $size15;
     }
 }
 
 @media (max-width: $medium-screen) {
     .carousel {
-        width: 90%;
-        margin: 10px auto;
-        height: 450px;
-        
-
+        @include carousel-dimensions($content-medium-width, $size450, $margin-base1);
     }
 }
 
 @media (max-width: $small-screen) {
     .carousel {
-        width: 100%;
-        height: 255px;
-        margin: 10px auto;
+        @include carousel-dimensions($content-large-width, $size255, $margin-base1);
 
         .counter {
-
-            font-size: 15px;
-
+            font-size: $title7;
         }
 
         .carouselPrev,
         .carouselNext {
-            width: 10px;
-            height: 20px;
+            width: $size1;
+            height: $size2;
 
             &.carouselPrev {
-                left: 5px;
+                left: $size05;
             }
 
             &.carouselNext {
-                right: 5px;
+                right: $size05;
             }
         }
     }
 }
+
+
+
+
+
+
+
+
+
+// @import '../../App.scss';
+
+// .carousel {
+//     display: flex;
+//     position: relative;
+//     align-items: center;
+//     height: $small3-screen;
+//     width: $content-large-width;
+//     border-radius: $radius5;
+//     margin: $margin-base;
+
+//     .carouselImage {
+//         width: $content-large-width;
+//         height: $content-large-width;
+//         object-fit: cover;
+//         border-radius: $radius5;
+//     }
+
+//     .counter {
+//         display: flex;
+//         position: absolute;
+//         color: $tertiary-color;
+//         top: $content-medium-width;
+//         left: $content-medsmall-width;
+//         font-size: $size25;
+//         font-family: $primary-font;
+//     }
+
+//     .carouselPrev,
+//     .carouselNext {
+//         display: flex;
+//         position: absolute;
+//         top: $content-medsmall-width;
+//         transform: translateY(-50%);
+//         cursor: pointer;
+
+//         &.carouselPrev {
+//             left: $size15;
+//         }
+
+//         &.carouselNext {
+//             right: $size15;
+//         }
+//     }
+// }
+
+// @media (max-width: $medium-screen) {
+//     .carousel {
+//         width: $content-medium-width;
+//         margin: $margin-base1;
+//         height: $size450;
+        
+
+//     }
+// }
+
+// @media (max-width: $small-screen) {
+//     .carousel {
+//         width: $content-large-width;
+//         height: $size255;
+//         margin: $margin-base1;
+
+//         .counter {
+
+//             font-size: $title7;
+
+//         }
+
+//         .carouselPrev,
+//         .carouselNext {
+//             width: $size1;
+//             height: $size2;
+
+//             &.carouselPrev {
+//                 left: $size05;
+//             }
+
+//             &.carouselNext {
+//                 right: $size05;
+//             }
+//         }
+//     }
+// }

@@ -6,26 +6,26 @@
   align-items: center;
   justify-content: center;
   height: 700px;
-  max-width: 1378px;
-  width: 90%;
+  max-width: $pages-width;
+  width: $content-medium-width;
   margin: 0 auto;
 
   &__Number {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: $content-large-width;
     height: 263px;
     font-size: 288px;
     color: $primary-color;
     justify-content: center;  
     margin: 0 auto;
     font-family: $primary-font;
-    font-weight: 700;
+    font-weight: $weight1;
   }
   &__text_content {
     display: flex;
     height: 52px;
-    width: 100%;
+    width: $content-large-width;
     gap: 10px;
     justify-content: center;
     margin: 40px auto;
@@ -34,7 +34,7 @@
     display: flex;
     color: $primary-color;
     justify-content: center;
-    font-weight: 500;
+    font-weight: $weight2;
     font-size: 36px;
     font-family: $primary-font;
    
@@ -43,11 +43,11 @@
   &__Link {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: $content-large-width;
     height: 26px;
     font-size: 18px;
     font-family: $primary-font;
-    font-weight: 500;
+    font-weight: $weight2;
     color: $footer-color;
     margin: 50px auto;
   }
@@ -58,7 +58,7 @@
     height: 450px;
 
     &__Number {
-      width: 100%;
+      width: $content-large-width;
       height: 200px;
       font-size: 150px;
       
@@ -68,7 +68,7 @@
       display: flex;
       flex-direction: column;
       height: 45px;
-      width: 100%; 
+      width: $content-large-width; 
     }
     &__Text {
       
@@ -78,11 +78,11 @@
    
     &__Link {
       display: flex;
-      width: 100%;
+      width: $content-large-width;
       height: 26px;
       font-size: 14px;
-      font-weight: 500;
-      margin: 50px auto;
+      font-weight: $weight2;
+      margin: $margin-base5;
     }
   }
 }
@@ -97,32 +97,34 @@
     height: 450px;
 
     &__Number {
-      width: 100%;
+      width: $content-large-width;
       height: 200px;
       font-size: 96px;
       margin: 20px auto;
       font-family: $primary-font;
-      font-weight: 700;
+      font-weight: $weight1;
       }
     &__text_content {
       display: flex;
       flex-direction: column;
       height: 52px;
-      width: 100%; 
+      width: $content-large-width; 
     }
-    &__Text1 {
+    &__Text {
       display: flex;
+      width: 90%;
       font-size: 18px;
-      margin: -5px auto;
+      margin: 0% auto;
+      padding: 0px 43px;
     }
-    &__Text2 {
-      display: flex;
-      font-size: 18px;
-      margin: -5px auto;
-    }
+    // &__Text2 {
+    //   display: flex;
+    //   font-size: 18px;
+    //   margin: -5px auto;
+    // }
     &__Link {
       display: flex;
-      width: 285px;
+      width: 75%;
       height: 26px;
       font-size: 14px;
       font-weight: 500;
