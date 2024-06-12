@@ -23,6 +23,11 @@
     flex-direction: row;
 }
 
+// Mixin pour les styles de l'élément de type flex avec direction inversée
+@mixin flex-row-reverse {
+    @include flex-element;
+    flex-direction: row-reverse;
+}
 // Mixin pour les styles de l'élément de type flex avec alignement central
 @mixin flex-center {
     align-items: center;
@@ -99,7 +104,7 @@
 }
 
 .host {
-    @include flex-row;
+    @include flex-row-reverse;
     align-items: center;
     gap: $size15;
     margin-bottom: $size15;
@@ -211,7 +216,7 @@
     }
 
     .host_rating_container {
-        @include flex-row;
+        @include flex-row-reverse;
         justify-content: space-between;
         width: $content-large-width;
         height: $size45;

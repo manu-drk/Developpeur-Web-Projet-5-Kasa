@@ -37,6 +37,9 @@
             &:hover {
                 text-decoration: underline;
             }
+            &.active {
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -106,6 +109,7 @@
             a {
                 margin-left: $size1;
                 font-size: $nav-link-font-small-size;
+                text-transform: uppercase;
             }
         }
 

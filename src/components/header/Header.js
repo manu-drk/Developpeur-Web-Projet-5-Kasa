@@ -1,6 +1,6 @@
 import logo from "../../assets/LOGO.png";
 // import Nav from "../nav/Nav";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './Header.scss'
 
 
@@ -12,12 +12,18 @@ export default function Header() {
             </figure>
             {/* <Nav className="nav-header" /> */}
             <nav className="nav-header">
-			<Link to="/" className="nav-bar_link-home">
+			{/* <Link to="/" className="nav-bar_link-home">
 				Accueil
 			</Link>
 			<Link to="/apropos" className="nav-bar_link-apropos">
 				A Propos
-			</Link>
+			</Link> */}
+            <NavLink to="/" exact className="nav-bar_link-home" activeClassName="active">
+                    Accueil
+                </NavLink>
+                <NavLink to="/apropos" className="nav-bar_link-apropos" activeClassName="active">
+                    A Propos
+                </NavLink>
 		</nav>
         </header>
     );

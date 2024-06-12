@@ -9,14 +9,12 @@ import './App.scss';
 
 function App() {
 	return (
-    // <div className="App">
-    //   <img src={logo} alt='logo-react'/>  
+    
     <div>  
       <Routes>      
         <Route path="/" element={<Home />} />
         <Route path="/apropos" element={<Apropos />} />
-         <Route path="/logements/:id" element={<Logements />} /> 
-        
+        <Route path="/logements/:id" element={<Logements />} />        
         <Route path="*" element={<Error />} />
       </Routes>
     
