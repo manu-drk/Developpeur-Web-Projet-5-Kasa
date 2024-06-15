@@ -1,8 +1,6 @@
 import logo from "../../assets/LOGO.png";
-// import Nav from "../nav/Nav";
 import { NavLink } from "react-router-dom";
-import './Header.scss'
-
+import './Header.scss';
 
 export default function Header() {
     return (
@@ -10,21 +8,21 @@ export default function Header() {
             <figure className="header__fig">
                 <img className="header-logo" src={logo} alt="logo de l'agence kasa" />
             </figure>
-            {/* <Nav className="nav-header" /> */}
             <nav className="nav-header">
-			{/* <Link to="/" className="nav-bar_link-home">
-				Accueil
-			</Link>
-			<Link to="/apropos" className="nav-bar_link-apropos">
-				A Propos
-			</Link> */}
-            <NavLink to="/" exact className="nav-bar_link-home" activeClassName="active">
+                <NavLink 
+                    to="/" 
+                    end 
+                    className={({ isActive }) => isActive ? "nav-bar_link-home active" : "nav-bar_link-home"}
+                >
                     Accueil
                 </NavLink>
-                <NavLink to="/apropos" className="nav-bar_link-apropos" activeClassName="active">
+                <NavLink 
+                    to="/apropos" 
+                    className={({ isActive }) => isActive ? "nav-bar_link-apropos active" : "nav-bar_link-apropos"}
+                >
                     A Propos
                 </NavLink>
-		</nav>
+            </nav>
         </header>
     );
 }
