@@ -18,7 +18,7 @@
     display: flex;
     position: relative;
     align-items: center;
-    @include carousel-dimensions($content-large-width, $small3-screen, $margin-base);
+    @include carousel-dimensions($content-large-width, $size415, $margin-base);
     border-radius: $radius5;
     .carouselImage {
         @include carousel-dimensions($content-large-width, $content-large-width, 0);
