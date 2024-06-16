@@ -9,14 +9,14 @@
         display: flex;
         justify-content: center;
         color: $tertiary-color;
-        margin: 0 auto;
+        margin: 10px auto;
         width: 122px;
-        height: 34px;
-        padding: 45px;
+        height: 50px;
+        padding: 50px 0px;
 
         .logo {
             width: 122px;
-            height: 34px;
+            height: 50px;
         }
     }
 
@@ -24,7 +24,7 @@
         display: flex;
         justify-content: center;
         color: $tertiary-color;
-        margin: auto;
+        margin: 45px auto;
         width: 100%;
         font-size: 24px;
         font-weight: 500;
@@ -46,11 +46,26 @@
 @media (max-width: $small-screen) {
     .footer {
         width: 100%;
+        &__fig {
+            display: flex;
+            justify-content: center;
+            color: $tertiary-color;
+            margin: 10px auto;
+            width: 122px;
+            height: 34px;
+            padding: 45px;
+    
+            .logo {
+                width: 122px;
+                height: 50px;
+            }}
         .copy {
         
-            width: 38%;
+            width: 33%;
             font-size: $nav-link-font-small-size;
             align-items: center;
+            text-align: center;
+            margin: 20px auto;
             
         } 
     }
