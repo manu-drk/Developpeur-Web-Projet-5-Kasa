@@ -7,8 +7,6 @@
     position: relative;
     border-radius: $radius2;
     overflow: hidden;
-
-
     &__img {
         width: $content-large-width;
         height: $content-large-width;
@@ -16,7 +14,6 @@
         min-width: $content-large-width;
         min-height: $content-large-width;
     }
-
     &__title {
         color: $tertiary-color;
         position: absolute;
@@ -31,7 +28,6 @@
         display: flex;
         width: $content-large-width;
         height: $content-large-width;
-
         position: relative;
         border-radius: $radius2;
         overflow: hidden;
@@ -47,12 +43,9 @@
         display: flex;
         width: $content-large-width;
         height: $content-large-width;
-
         position: relative;
         border-radius: $radius2;
         overflow: hidden;
-
-
         &__img {
             width: $content-large-width;
             height: $content-large-width;
@@ -60,7 +53,6 @@
             min-width: $content-large-width;
             min-height: $content-large-width;
         }
-
         &__title {
             color: $tertiary-color;
             position: absolute;

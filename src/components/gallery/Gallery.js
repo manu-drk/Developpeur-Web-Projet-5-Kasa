@@ -10,8 +10,7 @@ const Gallery = () => {
             {logements.map((logement) => {
                 return (
                     <article className="art" key={logement.id}>
-                        <Link to={`/logements/${logement.id}`}>
-                        
+                        <Link to={`/logements/${logement.id}`}>                        
                             <Cards image={logement.cover} title={logement.title} />
                         </Link>
                     </article>

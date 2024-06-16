@@ -1,26 +1,29 @@
 import React, { useState } from 'react';
 import './Collapse.scss';
 import flechUp from '../../assets/flech-up.png';
-// import flechDown from '../../assets/flech-down.png';
 
 function Collapse({ title, content }) {
     const [open, setOpen] = useState(false);
 
-    const handleToggle = () => {
-        setOpen(!open);
+    const handleToggle = (event) => {
+        // Vérifier si la cible du clic est l'image flechUp
+        if (event.target.tagName === 'IMG') {
+            setOpen(!open);
+        }
     };
 
     return (
         <div className='Collapse__container'>
-        <div className={`Collapse ${open ? "open" : ""}`}>
-            <div className='Collapse__title' onClick={handleToggle}>
-                <h2>{title}</h2>
-                <img src={flechUp} alt={open ? "Up" : "Down"} className={open ? "Collapse__title_img rotate" : "Collapse__title_img"} />
-            </div>
-            {/* <div className='Collapse__content'>
-            {open && <p>{content}</p>}</div>
-        </div> */}
-        <div className='Collapse__content'>
+            <div className={`Collapse ${open ? "open" : ""}`}>
+                <div className='Collapse__title' onClick={handleToggle}>
+                    <h2>{title}</h2>
+                    <img
+                        src={flechUp}
+                        alt={open ? "Up" : "Down"}
+                        className={open ? "Collapse__title_img rotate" : "Collapse__title_img"}
+                    />
+                </div>
+                <div className='Collapse__content'>
                     {open && (
                         Array.isArray(content) ? (
                             <ul>
@@ -33,10 +36,11 @@ function Collapse({ title, content }) {
                         )
                     )}
                 </div>
-        </div>
+            </div>
         </div>
     );
 }
+
 
 export default Collapse;
 
@@ -49,24 +53,3 @@ export default Collapse;
 
 
 
-
-// import React, { useState } from 'react';
-// import './Collapse.css'
-
-
-// function Collapse ({ title, content, id }) {
-//     const [open, setOpen] = useState(false)
-
-//     const handleToggle = e => {
-//         setOpen(!open)
-//     }
-//     return (
-//         <div className={`Collapse ${open && "open"}`}>
-//             <div className='Collapse__title' onClick={handleToggle}>{title} <i className="fa-solid fa-chevron-down"></i></div>
-//             <div className='Collapse__content'>{content}</div>
-//         </div>
-//     )
-// }
-
-
-// export default Collapse;

@@ -20,13 +20,11 @@
     align-items: center;
     @include carousel-dimensions($content-large-width, $small3-screen, $margin-base);
     border-radius: $radius5;
-
     .carouselImage {
         @include carousel-dimensions($content-large-width, $content-large-width, 0);
         object-fit: cover;
         border-radius: $radius5;
     }
-
     .counter {
         display: flex;
         position: absolute;
@@ -36,12 +34,10 @@
         font-size: $size25;
         font-family: $primary-font;
     }
-
     .carouselPrev {
         @include carousel-navigation;
         left: $size15;
     }
-
     .carouselNext {
         @include carousel-navigation;
         right: $size15;
@@ -57,20 +53,16 @@
 @media (max-width: $small-screen) {
     .carousel {
         @include carousel-dimensions($content-large-width, $size255, $margin-base1);
-
         .counter {
             font-size: $title7;
         }
-
         .carouselPrev,
         .carouselNext {
             width: $size1;
             height: $size2;
-
             &.carouselPrev {
                 left: $size05;
             }
-
             &.carouselNext {
                 right: $size05;
             }
@@ -85,87 +77,3 @@
 
 
 
-
-// @import '../../App.scss';
-
-// .carousel {
-//     display: flex;
-//     position: relative;
-//     align-items: center;
-//     height: $small3-screen;
-//     width: $content-large-width;
-//     border-radius: $radius5;
-//     margin: $margin-base;
-
-//     .carouselImage {
-//         width: $content-large-width;
-//         height: $content-large-width;
-//         object-fit: cover;
-//         border-radius: $radius5;
-//     }
-
-//     .counter {
-//         display: flex;
-//         position: absolute;
-//         color: $tertiary-color;
-//         top: $content-medium-width;
-//         left: $content-medsmall-width;
-//         font-size: $size25;
-//         font-family: $primary-font;
-//     }
-
-//     .carouselPrev,
-//     .carouselNext {
-//         display: flex;
-//         position: absolute;
-//         top: $content-medsmall-width;
-//         transform: translateY(-50%);
-//         cursor: pointer;
-
-//         &.carouselPrev {
-//             left: $size15;
-//         }
-
-//         &.carouselNext {
-//             right: $size15;
-//         }
-//     }
-// }
-
-// @media (max-width: $medium-screen) {
-//     .carousel {
-//         width: $content-medium-width;
-//         margin: $margin-base1;
-//         height: $size450;
-        
-
-//     }
-// }
-
-// @media (max-width: $small-screen) {
-//     .carousel {
-//         width: $content-large-width;
-//         height: $size255;
-//         margin: $margin-base1;
-
-//         .counter {
-
-//             font-size: $title7;
-
-//         }
-
-//         .carouselPrev,
-//         .carouselNext {
-//             width: $size1;
-//             height: $size2;
-
-//             &.carouselPrev {
-//                 left: $size05;
-//             }
-
-//             &.carouselNext {
-//                 right: $size05;
-//             }
-//         }
-//     }
-// }

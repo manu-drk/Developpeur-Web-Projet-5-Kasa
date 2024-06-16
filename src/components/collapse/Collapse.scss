@@ -1,7 +1,7 @@
 @import '../../App.scss';
 
 $transition-speed: 0.3s;
-$transition-slow-speed: 2.0s;
+$transition-slow-speed: 1.5s;
 $rotate-angle: 180deg;
 
 @keyframes slide-down {
@@ -9,7 +9,6 @@ $rotate-angle: 180deg;
         opacity: 0;
         transform: translateY(-80px);
     }
-
     100% {
         opacity: 1;
         transform: translateY(0px);
@@ -26,21 +25,16 @@ $rotate-angle: 180deg;
     align-items: center;
     max-width: $pages-width;
     width: $content-medium-width;
-
     .Collapse {
         display: flex;
         flex-direction: column;
-
         border-radius: $radius1;
         margin-bottom: $size3;
         width: $content-large-width;
-
-
         &.open {
             .Collapse__title img {
                 transform: rotate($rotate-angle);
             }
-
             .Collapse__content {
                 display: block;
                 opacity: 1;
@@ -48,7 +42,6 @@ $rotate-angle: 180deg;
                 max-height: 1000px;
             }
         }
-
         .Collapse__title {
             display: flex;
             height: 52px;
@@ -58,14 +51,12 @@ $rotate-angle: 180deg;
             border-radius: $radius1;
             align-items: center;
             position: relative;
-
             h2 {
                 color: $tertiary-color;
                 font-size: $title2;
                 font-weight: $weight1;
                 font-family: $primary-font;
             }
-
             img {
                 cursor: pointer;
                 position: absolute;
@@ -76,22 +67,17 @@ $rotate-angle: 180deg;
                 transition: transform $transition-speed ease;
             }
 
-            &:hover {
-                cursor: pointer;
-            }
+            // &:hover {
+            //     cursor: pointer;
+            // }
         }
 
         .Collapse__content {
             display: none;
             opacity: 0;
             overflow: hidden;
-            background-color: $secondary-color;
-            // transition: $transition-slow-speed;
-            // animation-name: slide-down;
-            //     /* Utilisez l'animation slide-down */
-            //     animation-duration: 1.5s;
+            background-color: $secondary-color;           
             padding: $size15;
-
             ul {
                 list-style: none;
                 padding: $size0;
@@ -107,7 +93,6 @@ $rotate-angle: 180deg;
                 font-size: $title3;
                 font-weight: $weight3;
                 font-family: $primary-font;
-
             }
             p {
                 color: $footer-color;
@@ -146,7 +131,6 @@ $rotate-angle: 180deg;
         align-items: center;
         margin: $margin-base;
     }
-
     .Collapse__title {
         display: flex;
         height: $size45;

@@ -11,9 +11,6 @@ export default function Error() {
                         Oups! La page que vous demandez n'existe pas.
                     </span>
                 </div>
-
-
-
                 <NavLink to="/" className="error_Container__Link">
                     Retourner sur la page d'accueil
                 </NavLink>

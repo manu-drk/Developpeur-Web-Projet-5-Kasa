@@ -23,12 +23,10 @@
   max-width: $pages-width;
   width: $content-medium-width;
   margin: $margin-base;
-
   &__Number {
     @include flex-center;
     @include error-text-style($title10, $weight1, $primary-color, $content-large-width, $size263);
   }
-
   &__text_content {
     @include flex-center(row, center, center);
     height: $size52;
@@ -36,12 +34,10 @@
     gap: $size1;
     margin: $margin-base4;
   }
-
   &__Text {
     @include flex-center;
     @include error-text-style($title1, $weight2, $primary-color);
   }
-
   &__Link {
     @include flex-center;
     @include error-text-style($title3, $weight2, $footer-color, $content-large-width, $size26, $margin-base5);
@@ -55,16 +51,13 @@
     &__Number {
       @include error-text-style($title11, $weight1, $primary-color, $content-large-width, $size200);
     }
-
     &__text_content {
       flex-direction: column;
       height: $size45;
     }
-
     &__Text {
       font-size: $title3;
     }
-
     &__Link {
       font-size: $title7;
       margin: $margin-base5;
@@ -75,15 +68,12 @@
 @media (max-width: $small-screen) {
   .error_Container {
     height: $size450;
-
     &__Number {
       @include error-text-style($title9, $weight1, $primary-color, $content-large-width, $size200, $margin-base2);
     }
-
     &__text_content {
       flex-direction: column;
     }
-
     &__Text {
       width: $content-medium-width;
       font-size: $title3;
@@ -91,7 +81,6 @@
       padding: $padding-base43;
       text-align: center;
     }
-
     &__Link {
       width: $content-smalllarge-width;
       font-size: $title7;
@@ -100,134 +89,3 @@
   }
 }
 
-
-// @import '../../App.scss';
-
-// .error_Container {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   height: $size700;
-//   max-width: $pages-width;
-//   width: $content-medium-width;
-//   margin: $margin-base;
-
-//   &__Number {
-//     display: flex;
-//     align-items: center;
-//     width: $content-large-width;
-//     height: $size263;
-//     font-size: $title10;
-//     color: $primary-color;
-//     justify-content: center;  
-//     margin: $margin-base;
-//     font-family: $primary-font;
-//     font-weight: $weight1;
-//   }
-//   &__text_content {
-//     display: flex;
-//     height: $size52;
-//     width: $content-large-width;
-//     gap: $size1;
-//     justify-content: center;
-//     margin: $margin-base4;
-//   }
-//   &__Text {
-//     display: flex;
-//     color: $primary-color;
-//     justify-content: center;
-//     font-weight: $weight2;
-//     font-size: $title1;
-//     font-family: $primary-font;
-
-//   }
-
-//   &__Link {
-//     display: flex;
-//     justify-content: center;
-//     width: $content-large-width;
-//     height: $size26;
-//     font-size: $title3;
-//     font-family: $primary-font;
-//     font-weight: $weight2;
-//     color: $footer-color;
-//     margin: $margin-base5;
-//   }
-// }
-// @media (max-width: $medium-screen) {
-//   .error_Container {
-
-//     height: $size450;
-
-//     &__Number {
-//       width: $content-large-width;
-//       height: $size200;
-//       font-size: $title11;
-
-
-//       }
-//     &__text_content {
-//       display: flex;
-//       flex-direction: column;
-//       height: $size45;
-//       width: $content-large-width; 
-//     }
-//     &__Text {
-
-//       font-size: $title3;
-
-//     }
-
-//     &__Link {
-//       display: flex;
-//       width: $content-large-width;
-//       height: $size26;
-//       font-size: $title7;
-//       font-weight: $weight2;
-//       margin: $margin-base5;
-//     }
-//   }
-// }
-
-// @media (max-width: $small-screen) {
-
-//   .error_Container {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     height: $size450;
-
-//     &__Number {
-//       width: $content-large-width;
-//       height: $size200;
-//       font-size: $title9;
-//       margin: $margin-base2;
-//       font-family: $primary-font;
-//       font-weight: $weight1;
-//       }
-//     &__text_content {
-//       display: flex;
-//       flex-direction: column;
-//       height: $size52;
-//       width: $content-large-width; 
-//     }
-//     &__Text {
-//       display: flex;
-//       width: $content-medium-width;
-//       font-size: $title3;
-//       margin: $margin-base;
-//       padding: $padding-base43;
-//     }
-
-//     &__Link {
-//       display: flex;
-//       width: $content-smalllarge-width;
-//       height: $size26;
-//       font-size: $title7;
-//       font-weight: $weight2;
-//       margin: $margin-base5;
-//     }
-//   }
-// }

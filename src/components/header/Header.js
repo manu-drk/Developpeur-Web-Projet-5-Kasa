@@ -12,14 +12,12 @@ export default function Header() {
                 <NavLink 
                     to="/" 
                     end 
-                    className={({ isActive }) => isActive ? "nav-bar_link-home active" : "nav-bar_link-home"}
-                >
+                    className={({ isActive }) => isActive ? "nav-bar_link-home active" : "nav-bar_link-home"}>
                     Accueil
                 </NavLink>
                 <NavLink 
                     to="/apropos" 
-                    className={({ isActive }) => isActive ? "nav-bar_link-apropos active" : "nav-bar_link-apropos"}
-                >
+                    className={({ isActive }) => isActive ? "nav-bar_link-apropos active" : "nav-bar_link-apropos"}>
                     A Propos
                 </NavLink>
             </nav>
