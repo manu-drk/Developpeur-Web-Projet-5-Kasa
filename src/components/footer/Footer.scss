@@ -2,21 +2,21 @@
 
 .footer {
     background-color: $footer-color;
-    height: 209px;
-    width: 100%;
+    height: $size209;
+    width: $content-large-width;
 
     &__fig {
         display: flex;
         justify-content: center;
         color: $tertiary-color;
-        margin: 10px auto;
-        width: 122px;
-        height: 50px;
-        padding: 50px 0px;
+        margin: $margin-base1;
+        width: $size122;
+        height: $size5;
+        padding: $size5 0px;
 
         .logo {
-            width: 122px;
-            height: 50px;
+            width: $size122;
+            height: $size5;
         }
     }
 
@@ -24,20 +24,20 @@
         display: flex;
         justify-content: center;
         color: $tertiary-color;
-        margin: 45px auto;
-        width: 100%;
-        font-size: 24px;
-        font-weight: 500;
+        margin: $margin-base45;
+        width: $content-large-width;
+        font-size: $size24;
+        font-weight: $weight2;
     }
 }
 
 @media (max-width: $medium-screen) {
     .footer {
-        width: 100%;
+        width: $content-large-width;
         .copy {
         
-            width: 65%;
-            font-size: 18px;
+            width: $psize65;
+            font-size: $size18;
             align-items: center;
             
         } 
@@ -45,27 +45,27 @@
 }
 @media (max-width: $small-screen) {
     .footer {
-        width: 100%;
+        width: $content-large-width;
         &__fig {
             display: flex;
             justify-content: center;
             color: $tertiary-color;
-            margin: 10px auto;
-            width: 122px;
-            height: 34px;
-            padding: 45px;
+            margin: $margin-base1;
+            width: $size122;
+            height: $size35;
+            padding: $size45;
     
             .logo {
-                width: 122px;
-                height: 50px;
+                width: $size122;
+                height: $size5;
             }}
         .copy {
         
-            width: 33%;
+            width: $psize33;
             font-size: $nav-link-font-small-size;
             align-items: center;
             text-align: center;
-            margin: 20px auto;
+            margin: $margin-base2;
             
         } 
     }

@@ -39,7 +39,8 @@ $rotate-angle: 180deg;
                 display: block;
                 opacity: 1;
                 transition: $transition-slow-speed;
-                max-height: 1000px;
+                max-height: $pages1-height;
+                
             }
         }
         .Collapse__title {
@@ -116,7 +117,7 @@ $rotate-angle: 180deg;
             height: $size3;
             padding: $size0 $size1;
             h2 {
-                font-size: 20px;
+                font-size: $size2;
                 font-weight: $weight2;
             }
         }
@@ -124,7 +125,7 @@ $rotate-angle: 180deg;
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: $small3-screen) {
     .Collapse__container {
         width: $content-medlarge-width;
         flex-direction: column;
@@ -159,8 +160,8 @@ $rotate-angle: 180deg;
                     font-weight: $weight2;
                 }
                 img {
-                    height: 8px;
-                    width: 12px;
+                    height: $size08;
+                    width: $size12;
                     right: $size15;
                 }
             }
