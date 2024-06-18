@@ -100,8 +100,10 @@
 }
 
 .host_rating_container {
-    @include flex-column;
+    display: flex;
+    flex-direction: column;
     width: $content-small-width;
+    justify-content: space-around;
 }
 
 .host {
@@ -248,6 +250,7 @@
     .logementsCarrousel {
         width: $content-medium-width;
         overflow: hidden;
+        margin-bottom: 0;
     }
 
     .section_2_logements {
