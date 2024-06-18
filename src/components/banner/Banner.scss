@@ -1,6 +1,6 @@
 @import '../../App.scss';
 
-// Mixins
+
 @mixin small-screen {
   @media (max-width: $small-screen) {
     @content;
@@ -59,7 +59,7 @@
   text-shadow: rgba(0, 0, 0, 0.30) 0px 3px 4px;
 }
 
-// Styles
+
 .banner {
   @include banner-styles;
 }

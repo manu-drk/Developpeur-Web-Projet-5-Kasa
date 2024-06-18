@@ -1,6 +1,6 @@
 @import '../../App.scss';
 
-// Mixin pour les dimensions et le style de base des cartes
+
 @mixin cards-base-style {
     display: flex;
     width: $content-large-width;
@@ -26,7 +26,7 @@
     }
 }
 
-// Mixin pour le style des cartes dans le media query max-width: $medium-screen
+
 @mixin cards-medium-screen {
     @include cards-base-style;
     &_title {
@@ -35,7 +35,7 @@
     }
 }
 
-// Mixin pour le style des cartes dans le media query max-width: $small-screen
+
 @mixin cards-small-screen {
     @include cards-base-style;
     &__title {
@@ -47,16 +47,16 @@
     }
 }
 
-// Utilisation des mixins dans les règles CSS
+
 .cards {
     @include cards-base-style;
 
-    // Media query pour max-width: $medium-screen
+   
     @media (max-width: $medium-screen) {
         @include cards-medium-screen;
     }
 
-    // Media query pour max-width: $small-screen
+    
     @media (max-width: $small-screen) {
         @include cards-small-screen;
     }

@@ -1,6 +1,6 @@
 @import '../../App.scss';
 
-// Mixins
+
 @mixin small-screen {
   @media (max-width: $small-screen) {
     @content;
@@ -67,7 +67,7 @@
   margin: $margin-base2;
 }
 
-// Styles
+
 .footer {
   @include footer-styles;
 
