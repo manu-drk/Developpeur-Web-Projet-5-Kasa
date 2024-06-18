@@ -39,7 +39,8 @@ $margin-base45: 45px auto;
 $margin-base5: 50px auto;
 $margin-base6: 60px auto;
 $padding-base43: 0 43px;
-$pages-width: 1378px;
+$pages-width: 1440px;
+$pages0-width: 1240px;
 $pages1-width: 1000px;
 $pages1-height: 1000px;
 $content-large-width: 100%;
@@ -137,9 +138,11 @@ $psize65:65%;
 
 
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+// * {
+//     padding: 0;
+//     // margin: $margin-base;
+//     box-sizing: border-box;
+//     max-width: $pages-width;
+//     // margin: 0;
 
-}
+// }

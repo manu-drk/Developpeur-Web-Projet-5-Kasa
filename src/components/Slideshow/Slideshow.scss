@@ -20,11 +20,13 @@
     align-items: center;
     @include carousel-dimensions($content-large-width, $size415, $margin-base);
     border-radius: $radius5;
+
     .carouselImage {
         @include carousel-dimensions($content-large-width, $content-large-width, 0);
         object-fit: cover;
         border-radius: $radius5;
     }
+
     .counter {
         display: flex;
         position: absolute;
@@ -34,10 +36,12 @@
         font-size: $size25;
         font-family: $primary-font;
     }
+
     .carouselPrev {
         @include carousel-navigation;
         left: $size15;
     }
+
     .carouselNext {
         @include carousel-navigation;
         right: $size15;
@@ -53,27 +57,23 @@
 @media (max-width: $small-screen) {
     .carousel {
         @include carousel-dimensions($content-large-width, $size255, $margin-base1);
+
         .counter {
             font-size: $title7;
         }
+
         .carouselPrev,
         .carouselNext {
             width: $size1;
             height: $size2;
+
             &.carouselPrev {
                 left: $size05;
             }
+
             &.carouselNext {
                 right: $size05;
             }
         }
     }
 }
-
-
-
-
-
-
-
-

@@ -1,35 +1,185 @@
+// @import '../../App.scss';
+
+// // Mixins
+// @mixin small-screen {
+//   @media (max-width: $small-screen) {
+//     @content;
+//   }
+// }
+
+// @mixin medium-screen {
+//   @media (max-width: $medium-screen) {
+//     @content;
+//   }
+// }
+
+// @mixin small-width-450 {
+//   @media (max-width: 450px) {
+//     @content;
+//   }
+// }
+
+// @mixin header-styles {
+//   display: flex;
+//   width: $content-medium-width;
+//   max-width: $pages-width;
+//   height: $header-height;
+//   justify-content: space-between;
+//   align-items: center;
+//   margin: $header-margin auto;
+// }
+
+// @mixin header-logo-styles {
+//   width: $header-logo-width;
+//   height: $header-logo-height;
+// }
+
+// @mixin header-fig-styles {
+//   margin-left: $size0;
+//   width: $header-logo-width;
+// }
+
+// @mixin nav-header-styles {
+//   display: flex;
+//   justify-content: flex-end;
+//   margin: auto;
+//   width: $header-width;
+
+//   a {
+//     margin-left: $nav-link-margin;
+//     text-transform: none;
+//     text-decoration: none;
+//     color: $nav-link-color;
+//     font-size: $nav-link-font-size;
+
+//     &:hover {
+//       text-decoration: underline;
+//     }
+
+//     &.active {
+//       text-decoration: underline;
+//     }
+//   }
+// }
+
+// // Styles
+// .header {
+//   @include header-styles;
+
+//   &-logo {
+//     @include header-logo-styles;
+//   }
+
+//   &__fig {
+//     @include header-fig-styles;
+//   }
+
+//   .nav-header {
+//     @include nav-header-styles;
+//   }
+// }
+
+// @include medium-screen {
+//   .header {
+//     width: $content-medium-width;
+
+//     &-logo {
+//       width: $header-logo-min-width;
+//       height: $header-logo-min-height;
+//     }
+
+//     .nav-header {
+//       width: $content-medsmall1-width;
+//       margin-left: $size1;
+//       margin: $size0;
+
+//       a {
+//         margin-left: $size1;
+//         font-size: $title8;
+//       }
+//     }
+//   }
+// }
+
+// @include small-width-450 {
+//   .header .nav-header {
+//     width: $content-small0-width;
+//     margin-left: $size1;
+//     margin: $size0;
+//   }
+
+//   .header .nav-header a {
+//     margin-left: $size05;
+//     font-size: $title7;
+//   }
+// }
+
+// @include small-screen {
+//   .header {
+//     display: flex;
+//     width: $content-medium-width;
+//     margin: $size1 auto;
+
+//     &-logo {
+//       width: $content-large-width;
+//       min-width: $content-smalllarge-width;
+//     }
+
+//     &__fig {
+//       width: $content-small1-width;
+//     }
+
+//     .nav-header {
+//       width: $content-medsmall1-width;
+
+//       a {
+//         margin-left: $size1;
+//         font-size: $nav-link-font-small-size;
+//         text-transform: uppercase;
+//       }
+//     }
+//   }
+// }
+
 @import '../../App.scss';
+
 
 .header {
     display: flex;
-    width: $content-medium-width;
+    width: 86%;
     max-width: $pages-width;
     height: $header-height;
     justify-content: space-between;
     align-items: center;
     margin: $header-margin auto;
+
     &-logo {
         width: $header-logo-width;
         height: $header-logo-height;
     }
+
     &__fig {
         margin-left: $size0;
         width: $header-logo-width;
     }
+
     .nav-header {
         display: flex;
         justify-content: flex-end;
         margin: auto;
         width: $header-width;
+
         a {
             margin-left: $nav-link-margin;
             text-transform: none;
             text-decoration: none;
             color: $nav-link-color;
             font-size: $nav-link-font-size;
+
             &:hover {
                 text-decoration: underline;
             }
+
             &.active {
                 text-decoration: underline;
             }
@@ -37,9 +187,11 @@
     }
 }
 
+
 @media (max-width: $medium-screen) {
     .header {
         width: $content-medium-width;
+
         &-logo {
             width: $header-logo-min-width;
             height: $header-logo-min-height;
@@ -49,15 +201,13 @@
             width: $content-medsmall1-width;
             margin-left: $size1;
             margin: $size0;
+
             a {
                 margin-left: $size1;
                 font-size: $title8;
             }
         }
     }
-
-
-
 }
 
 
@@ -67,26 +217,32 @@
         margin-left: $size1;
         margin: $size0;
     }
+
     .header .nav-header a {
         margin-left: $size05;
         font-size: $title7;
     }
 }
 
+
 @media (max-width: $small-screen) {
     .header {
         display: flex;
         width: $content-medium-width;
         margin: $size1 auto;
+
         &-logo {
             width: $content-large-width;
             min-width: $content-smalllarge-width;
         }
+
         &__fig {
             width: $content-small1-width;
         }
+
         .nav-header {
             width: $content-medsmall1-width;
+
             a {
                 margin-left: $size1;
                 font-size: $nav-link-font-small-size;
@@ -94,7 +250,4 @@
             }
         }
     }
-
-
-
 }

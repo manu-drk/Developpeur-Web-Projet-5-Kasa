@@ -5,7 +5,7 @@ import Gallery from "../../components/gallery/Gallery";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import imgHomeBanner from "../../assets/banner/homeBanner.jpeg";
-// import './Home.scss';
+import './Home.scss';
 
 function Home() {
 

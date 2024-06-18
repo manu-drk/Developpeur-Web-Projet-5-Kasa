@@ -1,11 +1,13 @@
 @import '../../App.scss';
 
+
 @mixin flex-center($direction: row, $align: center, $justify: center) {
   display: flex;
   flex-direction: $direction;
   align-items: $align;
   justify-content: $justify;
 }
+
 
 @mixin error-text-style($font-size, $font-weight, $color, $width: auto, $height: auto, $margin: $margin-base) {
   font-size: $font-size;
@@ -17,16 +19,19 @@
   margin: $margin;
 }
 
+
 .error_Container {
   @include flex-center(column);
   height: $size700;
   max-width: $pages-width;
   width: $content-medium-width;
   margin: $margin-base;
+
   &__Number {
     @include flex-center;
     @include error-text-style($title10, $weight1, $primary-color, $content-large-width, $size263);
   }
+
   &__text_content {
     @include flex-center(row, center, center);
     height: $size52;
@@ -34,10 +39,12 @@
     gap: $size1;
     margin: $margin-base4;
   }
+
   &__Text {
     @include flex-center;
     @include error-text-style($title1, $weight2, $primary-color);
   }
+
   &__Link {
     @include flex-center;
     @include error-text-style($title3, $weight2, $footer-color, $content-large-width, $size26, $margin-base5);
@@ -51,13 +58,16 @@
     &__Number {
       @include error-text-style($title11, $weight1, $primary-color, $content-large-width, $size200);
     }
+
     &__text_content {
       flex-direction: column;
       height: $size45;
     }
+
     &__Text {
       font-size: $title3;
     }
+
     &__Link {
       font-size: $title7;
       margin: $margin-base5;
@@ -68,12 +78,15 @@
 @media (max-width: $small-screen) {
   .error_Container {
     height: $size450;
+
     &__Number {
       @include error-text-style($title9, $weight1, $primary-color, $content-large-width, $size200, $margin-base2);
     }
+
     &__text_content {
       flex-direction: column;
     }
+
     &__Text {
       width: $content-medium-width;
       font-size: $title3;
@@ -81,6 +94,7 @@
       padding: $padding-base43;
       text-align: center;
     }
+
     &__Link {
       width: $content-smalllarge-width;
       font-size: $title7;
@@ -88,4 +102,3 @@
     }
   }
 }
-

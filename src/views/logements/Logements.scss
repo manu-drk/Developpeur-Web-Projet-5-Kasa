@@ -28,6 +28,7 @@
     @include flex-element;
     flex-direction: row-reverse;
 }
+
 // Mixin pour les styles de l'élément de type flex avec alignement central
 @mixin flex-center {
     align-items: center;
@@ -281,25 +282,29 @@
         border-radius: $size05;
         flex-wrap: wrap;
     }
+
     .logement-tags {
         flex-wrap: wrap;
 
     }
+
     .host_rating_container {
-        
+
         margin: $margin-base1;
     }
 
     .host img {
         width: $size32;
     }
+
     .rating-stars img {
         height: $size18;
         width: $size18;
         margin-left: $psize4;
-    margin-right: $psize05;
+        margin-right: $psize05;
     }
-    .host {       
+
+    .host {
         align-items: center;
         gap: $size05;
         margin-bottom: 0;
@@ -308,14 +313,9 @@
         margin-right: $psize1;
         width: $psize30;
     }
+
     .host span {
         display: flex;
         margin-left: $size2;
     }
 }
-
-
-
-
-
-

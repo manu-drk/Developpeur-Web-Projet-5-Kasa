@@ -7,13 +7,15 @@
     width: $content-large-width;
     margin: $margin-base;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
+
 @media (max-width: $medium-screen) {
     .apropos {
         width: $content-large-width;
     }
 }
+
 @media (max-width: $small-screen) {
     .apropos {
         width: $content-large-width;

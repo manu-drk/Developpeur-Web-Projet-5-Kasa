@@ -1,74 +1,180 @@
 @import '../../App.scss';
 
+// Mixins
+@mixin small-screen {
+  @media (max-width: $small-screen) {
+    @content;
+  }
+}
+
+@mixin medium-screen {
+  @media (max-width: $medium-screen) {
+    @content;
+  }
+}
+
+@mixin footer-styles {
+  background-color: $footer-color;
+  height: $size209;
+  width: $content-large-width;
+}
+
+@mixin footer-fig-styles {
+  display: flex;
+  justify-content: center;
+  color: $tertiary-color;
+  margin: $margin-base1;
+  width: $size122;
+  height: $size5;
+  padding: $size5 0px;
+
+  .logo {
+    width: $size122;
+    height: $size5;
+  }
+}
+
+@mixin copy-styles {
+  display: flex;
+  justify-content: center;
+  color: $tertiary-color;
+  margin: $margin-base45;
+  width: $content-large-width;
+  font-size: $size24;
+  font-weight: $weight2;
+}
+
+@mixin footer-fig-small-styles {
+  display: flex;
+  justify-content: center;
+  color: $tertiary-color;
+  margin: $margin-base1;
+  width: $size122;
+  height: $size35;
+  padding: $size45;
+
+  .logo {
+    width: $size122;
+    height: $size5;
+  }
+}
+
+@mixin copy-small-styles {
+  width: $psize33;
+  font-size: $nav-link-font-small-size;
+  align-items: center;
+  text-align: center;
+  margin: $margin-base2;
+}
+
+// Styles
 .footer {
-    background-color: $footer-color;
-    height: $size209;
+  @include footer-styles;
+
+  &__fig {
+    @include footer-fig-styles;
+  }
+
+  .copy {
+    @include copy-styles;
+  }
+
+  @include medium-screen {
+    width: $content-large-width;
+
+    .copy {
+      width: $psize65;
+      font-size: $size18;
+      align-items: center;
+    }
+  }
+
+  @include small-screen {
     width: $content-large-width;
 
     &__fig {
-        display: flex;
-        justify-content: center;
-        color: $tertiary-color;
-        margin: $margin-base1;
-        width: $size122;
-        height: $size5;
-        padding: $size5 0px;
-
-        .logo {
-            width: $size122;
-            height: $size5;
-        }
+      @include footer-fig-small-styles;
     }
 
     .copy {
-        display: flex;
-        justify-content: center;
-        color: $tertiary-color;
-        margin: $margin-base45;
-        width: $content-large-width;
-        font-size: $size24;
-        font-weight: $weight2;
+      @include copy-small-styles;
     }
+  }
 }
 
-@media (max-width: $medium-screen) {
-    .footer {
-        width: $content-large-width;
-        .copy {
+
+
+// @import '../../App.scss';
+
+// .footer {
+//     background-color: $footer-color;
+//     height: $size209;
+//     width: $content-large-width;
+
+//     &__fig {
+//         display: flex;
+//         justify-content: center;
+//         color: $tertiary-color;
+//         margin: $margin-base1;
+//         width: $size122;
+//         height: $size5;
+//         padding: $size5 0px;
+
+//         .logo {
+//             width: $size122;
+//             height: $size5;
+//         }
+//     }
+
+//     .copy {
+//         display: flex;
+//         justify-content: center;
+//         color: $tertiary-color;
+//         margin: $margin-base45;
+//         width: $content-large-width;
+//         font-size: $size24;
+//         font-weight: $weight2;
+//     }
+// }
+
+// @media (max-width: $medium-screen) {
+//     .footer {
+//         width: $content-large-width;
+//         .copy {
         
-            width: $psize65;
-            font-size: $size18;
-            align-items: center;
+//             width: $psize65;
+//             font-size: $size18;
+//             align-items: center;
             
-        } 
-    }
-}
-@media (max-width: $small-screen) {
-    .footer {
-        width: $content-large-width;
-        &__fig {
-            display: flex;
-            justify-content: center;
-            color: $tertiary-color;
-            margin: $margin-base1;
-            width: $size122;
-            height: $size35;
-            padding: $size45;
+//         } 
+//     }
+// }
+// @media (max-width: $small-screen) {
+//     .footer {
+//         width: $content-large-width;
+//         &__fig {
+//             display: flex;
+//             justify-content: center;
+//             color: $tertiary-color;
+//             margin: $margin-base1;
+//             width: $size122;
+//             height: $size35;
+//             padding: $size45;
     
-            .logo {
-                width: $size122;
-                height: $size5;
-            }}
-        .copy {
+//             .logo {
+//                 width: $size122;
+//                 height: $size5;
+//             }}
+//         .copy {
         
-            width: $psize33;
-            font-size: $nav-link-font-small-size;
-            align-items: center;
-            text-align: center;
-            margin: $margin-base2;
+//             width: $psize33;
+//             font-size: $nav-link-font-small-size;
+//             align-items: center;
+//             text-align: center;
+//             margin: $margin-base2;
             
-        } 
-    }
+//         } 
+//     }
     
-}
+// }
 
