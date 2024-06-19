@@ -25,11 +25,12 @@
   height: $size700;
   max-width: $pages-width;
   width: $content-medium-width;
-  margin: $margin-base;
+  margin: $margin-base5;
 
   &__Number {
     @include flex-center;
     @include error-text-style($title10, $weight1, $primary-color, $content-large-width, $size263);
+    margin: $margin-base5;
   }
 
   &__text_content {
@@ -91,7 +92,7 @@
       width: $content-medium-width;
       font-size: $title3;
       margin: $margin-base;
-      padding: $padding-base43;
+      // padding: $padding-base43;
       text-align: center;
     }
 
