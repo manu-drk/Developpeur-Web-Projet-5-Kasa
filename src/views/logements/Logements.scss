@@ -1,35 +1,29 @@
 @import '../../App.scss';
 
-// Mixin pour les styles de la largeur maximale et la marge de l'élément
 @mixin large-element {
     max-width: $pages-width;
     margin: $margin-base;
 }
 
-// Mixin pour les styles de l'élément de type flex
 @mixin flex-element {
     display: flex;
 }
 
-// Mixin pour les styles de l'élément de type flex avec direction de colonne
 @mixin flex-column {
     @include flex-element;
     flex-direction: column;
 }
 
-// Mixin pour les styles de l'élément de type flex avec direction de rangée
 @mixin flex-row {
     @include flex-element;
     flex-direction: row;
 }
 
-// Mixin pour les styles de l'élément de type flex avec direction inversée
 @mixin flex-row-reverse {
     @include flex-element;
     flex-direction: row-reverse;
 }
 
-// Mixin pour les styles de l'élément de type flex avec alignement central
 @mixin flex-center {
     align-items: center;
 }
