@@ -146,7 +146,7 @@
 
 .header {
     display: flex;
-    width: 86%;
+    width: $psize86;
     max-width: $pages-width;
     height: $header-height;
     justify-content: space-between;
@@ -211,7 +211,7 @@
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: $small2-screen) {
     .header .nav-header {
         width: $content-small0-width;
         margin-left: $size1;
@@ -247,7 +247,7 @@
                 margin-left: $size1;
                 font-size: $nav-link-font-small-size;
                 text-transform: uppercase;
-                font-weight: 600;
+                font-weight: $weight6;
             }
         }
     }

@@ -2,7 +2,7 @@
 
 .home__gallery {
     max-width: $pages-width;
-    width: 81%;
+    width: $psize81;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: $size4;

@@ -90,7 +90,7 @@
     justify-content: center;
     align-items: center;
     height: $size25;
-    padding: 1px 23px;
+    padding: $size01 $size23;
     background-color: $primary-color;
     border-radius: $radius2;
     font-size: $title7;
@@ -144,8 +144,8 @@
 .Collapse-logements {
     margin: $margin-base;
     @include flex-row;
-    width: 87%;
-    gap: 10%;
+    width: $psize87;
+    gap: $psize10;
 }
 
 .Collapse_title {
@@ -235,7 +235,7 @@
 
     .Collapse-logements {
         @include flex-column;
-        width: 92%;
+        width: $psize92;
         gap: $psize4;
     }
 }
@@ -276,14 +276,14 @@
         font-size: $title7;
         font-family: $primary-font;
         margin-bottom: $size05;
-        font-weight: 600;
+        font-weight: $weight6;
         
 
     }
 
     .logement-tag {
         height: $size18;
-        padding: $size0 20px;
+        padding: $size0 $size2;
         font-size: $title5;
         border-radius: $size05;
         flex-wrap: wrap;
