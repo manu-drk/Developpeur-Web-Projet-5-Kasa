@@ -1,13 +1,11 @@
 @import '../../App.scss';
 
 .apropos {
-    // display: flex;
-    justify-content: center;
+    
     max-width: $pages-width;
     width: $content-large-width;
     margin: $margin-base;
-    flex-direction: column;
-    align-items: center;
+    
 }
 
 @media (max-width: $medium-screen) {
