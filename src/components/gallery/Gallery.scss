@@ -2,7 +2,7 @@
 
 .home__gallery {
     max-width: $pages-width;
-    width: 81%;
+    width: $header2-width;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: $size4;
@@ -11,7 +11,11 @@
     background-color: $secondary-color;
     border-radius: $radius5;
 }
-
+@media (max-width: $header1-width) {
+    .home__gallery {
+        width: $psize80;
+    }
+}
 @media (max-width: $medium-screen) {
     .home__gallery {
         width: $content-medium-width;

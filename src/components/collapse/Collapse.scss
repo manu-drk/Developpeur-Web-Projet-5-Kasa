@@ -48,7 +48,7 @@ $rotate-angle: 180deg;
         }
         .Collapse__title {
             display: flex;
-            height: 52px;
+            height: $size52;
             width: $content-large-width;
             background-color: $primary-color;
             padding: $size0 $size2 $size0 $size15;

@@ -2,7 +2,7 @@
 
 .header {
     display: flex;
-    width: $psize86;
+    width: $pages0-width;
     max-width: $pages-width;
     height: $header-height;
     justify-content: space-between;
@@ -43,6 +43,11 @@
     }
 }
 
+@media (max-width: $header1-width) {
+    .header {
+        width: $content-medium-width;
+    }
+}
 
 @media (max-width: $medium-screen) {
     .header {

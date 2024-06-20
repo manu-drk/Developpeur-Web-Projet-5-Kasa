@@ -37,13 +37,13 @@
 
 .logementsCarrousel {
     margin: $margin-base;
-    width: $content-medium-width;
+    width: $pages0-width;
 }
 
 .section_2_logements {
     @include flex-row;
     justify-content: space-between;
-    width: $content-medium-width;
+    width: $pages0-width;
     margin: $margin-base;
 }
 
@@ -138,7 +138,7 @@
 .Collapse-logements {
     margin: $margin-base;
     @include flex-row;
-    width: 88%;
+    width: 1208px;
     gap: $psize10;
 }
 
@@ -160,7 +160,17 @@
     max-height: $pages1-width;
     overflow: visible;
 }
-
+@media (max-width: $header1-width) {
+    .Collapse-logements {
+        width: $content-medium-width;
+    }
+    .section_2_logements {
+        width: $content-medium-width;
+    }
+    .logementsCarrousel {
+        width: $content-medium-width;
+    }
+}
 @media (max-width: $medium-screen) {
     .logementsCarrousel {
         width: $content-large-width;
@@ -173,7 +183,7 @@
 
     .Collapse-logements {
         width: $content-medium-width;
-        gap: $psize5;
+        gap: $psize10;
         justify-content: center;
     }
 
