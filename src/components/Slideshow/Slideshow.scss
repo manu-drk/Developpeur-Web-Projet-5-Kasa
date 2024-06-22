@@ -59,7 +59,7 @@
         @include carousel-dimensions($content-large-width, $size255, $margin-base1);
 
         .counter {
-            font-size: $title7;
+            display: none;
         }
 
         .carouselPrev,
